@@ -1,0 +1,10 @@
+[
+  {
+    "text": "Is there some inscription",
+    "intent": "domus_confuleius_inscriptions",
+    "intent_prediction": {
+      "name": "domus_confuleius_inscriptions_location",
+      "confidence": 0.4267530143260956
+    }
+  }
+]

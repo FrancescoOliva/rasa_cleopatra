@@ -1,0 +1,628 @@
+version: '3.1'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- EXTERNAL_page_change
+- greet
+- goodbye
+- my_location
+- info_path
+- what_is
+- where_is
+- ancient_location
+- ancient_appearance
+- dimension
+- monument_date
+- monument_discovered
+- monument_restoration
+- monument_material
+- architecture_info
+- monument_function
+- monument_depictions
+- monument_epigraph
+- name_meaning
+- who_is
+- domus_rooms
+- conocchia_enclosure
+- current_state
+- domus_confuleius_rooms
+- domus_confuleius_inscriptions
+- domus_confuleius_inscriptions_location
+- domus_confuleius_floors
+- domus_confuleius_owner
+- domus_via_orti_spa
+- domus_via_orti_thermal_rooms
+- domus_via_orti_cubiculum_floor
+- domus_via_orti_triclinium_floor
+- domus_via_orti_entrance
+- bot_challenge
+entities:
+- page_url
+- zoom_factor
+- zoom_x
+- zoom_y
+- pan_x
+- pan_y
+- annotation_url
+- topic
+- word
+slots:
+  page_url:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: page_url
+  zoom_factor:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: zoom_factor
+  zoom_x:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: zoom_x
+  zoom_y:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: zoom_y
+  pan_x:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: pan_x
+  pan_y:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: pan_y
+  annotation_url:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: annotation_url
+  topic:
+    type: categorical
+    initial_value: arch
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: topic
+    values:
+    - arch
+    - triumphal_arch
+    - conocchia
+    - domus
+    - domus_orti
+    - domus_confuleius
+    - theater
+    - cryptoporticus
+    - peculiaris
+    - confuleius
+    - fattori
+    - first_confuleius
+    - second_confuleius
+  word:
+    type: categorical
+    initial_value: conocchia
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: word
+    values:
+    - triclinium
+    - cubiculum
+    - opus_sectile
+    - sagum
+    - pompeian_style
+    - brick_work
+    - tomb
+
+responses:
+  utter_greet:
+  - text: "Hallo! Ask me something."
+  utter_goodbye:
+  - text: "Bye!"
+  utter_my_location:
+  - text: "You are on the Appia way, the red point is where you are!"
+  utter_ask_topic:
+  - text: "What topic you are insterested in? (Arch, conocchia, domus, theather)"
+  utter_info_path:
+  - text: "You can visit: Arco of Adriano, Conocchia, Cryptoporticus, Domus of Confuleius, Domus in Via degli Orti, Theater. Ask me what you would like to know!"
+  utter_bot_challenge:
+  - text: "I'm Cleopatra, bot made by University of Campania 'Luigi Vanvitelli'" 
+  utter_conocchia_enclosure:
+  - text: "The enclosure assigned to the funerary space and the characteristics of the locus amoenus that made the stop pleasant for the visitor"
+
+  utter_domus_confuleius_owner: 
+  - text: "Thanks to the floor inscription in the second room, we know that the domus belonged to a certain Publius Confuleio, perhaps a slave freed to the gens Confuleia, by profession sagarius, or the one who sold and probably worked the sagum, a heavy wool cloak used in military field. The hypothesis that Publio Confuleio, in addition to the sale, was also involved in the processing of the sagum, is suggested by the presence of the rectangular basin and the circular well in one of the two rooms. From the inscription emerges the pride of a freedman who wanted to leave his mark, to anyone who entered the domus, of his social ascent: a man who from slave to freedman built his house from the foundations to the top, also paying attention to the care of the environments dedicated to work."
+
+  utter_domus_via_orti_spa: 
+  - text: "The private baths were built like the public ones, and they also had the same social and political fictions, they were built putting in communication to easily pass from the tepidarium, where there was the warm water tank whose function was to prepare the body for the rest of the route, the skin was massaged with oils and ointments, after this preparation one entered the calidarium, where a hot tub of water welcomed the guest. If you wanted to, you would go to the laconicum behind the sauna. After a while we returned to the tepidarium and then finished the wellness program in the frigidarium, that is, in an environment where we immersed ourselves in a cool tub to tone the skin and regain energy."
+
+  utter_domus_via_orti_thermal_rooms: 
+  - text: "The spa rooms had both floors and walls covered in white, black and polychrome marble. In the frigidarium you can observe a portion of mosaic with white tiles while in the cubiculum a mosaic floor that has a geometric decoration in black and white that recalls floral motifs. In the triclinium there is a floor in opus sectile with a geometric design. The marbles used, African yellow, pavonazzetto, red cipollino, create suggestive plays of color and the accuracy of the installation further enhances their richness and uniqueness. This type of floor, in terms of technique and materials, has been traced back to late antiquity, when the domus underwent renovations and redecorations (4th century a.D.)."
+
+  utter_domus_via_orti_cubiculum_floor:
+  - text: "Behind the baths and separated by a corridor, a series of rooms were found, one of these must probably have been a bedroom which, despite the poor state of conservation, had frescoed walls with a red plinth and dark overlying panels on light background while the floor is decorated with black and white mosaic that encloses a central emblem made up of squares bordered by four peltae. The environment has been remodeled several times in fact the last floor dates back to the first half of the 5th century AD, where a new entrance and steps have been added."
+
+  utter_domus_via_orti_triclinium_floor:
+  - text: "The triclinium is the environment with luxurious floors of black and white marble septile work. In the past, the floor was surveyed and placed in the Archaeological Museum of S. Maria C. V., awaiting restoration. The triclinium had the function of representation for illustrious guests. It contained three beds, each for three people, on which guests reclined for meals and conversation. Curved wall; part of the walls had to crown a room equipped with heating. It is executed in mixed work, which alternates rows of terracotta bricks and rows of stones. The wall can be dated between the third and fourth centuries. A.D., therefore to the late empire in which curved surfaces were preferred to flat ones. The room had two floors spaced apart with small columns made of terracotta and stone discs. The criterion was adopted for the propagation of hot air. Neglect, in the following decades, lost most of the records."
+
+  utter_domus_via_orti_entrance:
+  - text: "The main entrance has not been identified infact you enter the domus da via degli Orti that is from where the garden that played a very important role in the Roman houses was originally located, cheered the guests."
+  
+  utter_EXTERNAL_page_change:
+  - text: ""
+
+
+
+  utter_what_is:
+  - condition:
+    - name: topic
+      type: slot
+      value: triumphal_arch
+    text: "Triumphal arches are one of the most influential and distinctive types of architecture associated with ancient Rome. Thought to have been invented by the Romans, the Roman triumphal arch was used to commemorate victorious generals or significant public events such as the founding of new colonies, the construction of a road or bridge, the death of a member of the imperial family or the accession of a new emperor."
+  - condition:
+    - name: topic
+      type: slot
+      value: arch
+    text: "It is a triumphal arch located along the Via Appia, a sort of ideal entrance to the ancient city of Capua."
+  - condition:
+    - name: topic
+      type: slot
+      value: conocchia
+    text: "It is a funerary monument along the ancient Appian Way."
+  - condition:
+    - name: topic
+      type: slot
+      value: cryptoporticus
+    text: "It is a building consisting, as the name suggests, of a covered portico with masonry vaults and illuminated by loopholes placed at the top."
+  - condition:
+    - name: topic
+      type: slot
+      value: theater
+    text: "The theater had an east-facing cavea and its remains were visible at least until the early nineteenth century and then partially explored during public works in 1900. Remains of the cavea's substructures were found in 1942 in the courtyard of the Pica barracks."
+  - condition:
+    - name: topic
+      type: slot
+      value: domus_confuleius
+    text: "It is the home of a slave, probably of oriental origin, named Publio Confuleio Sabbione who in this domus not only sold but also worked the sagum, a heavy wool cloak used by low-ranking soldiers."
+  - condition:
+    - name: topic
+      type: slot
+      value: domus
+    text: "It is a home, within the city, of wealthy Roman families."
+  - condition:
+    - name: topic
+      type: slot
+      value: domus_orti
+    text: "It is a town house; in ancient times there was a clear distinction between a Domus and a villa. The Domus was a town house, albeit very large and with a garden; a villa was, on the other hand, an out-of-town house"
+  utter_where_is:
+  - condition:
+    - name: topic
+      type: slot
+      value: arch
+    text: "In S. Maria Capua Vetere, along Corso Aldo Moro."
+  - condition:
+    - name: topic
+      type: slot
+      value: conocchia
+    text: "In the municipality of Curti (CE), along the current Via Nazionale Appia which follows the ancient route of the ancient Via Appia."
+  - condition:
+    - name: topic
+      type: slot
+      value: cryptoporticus
+    text: "In S. Maria Capua Vetere, along Corso Aldo Moro, in an elevated position with respect to the road level."
+  - condition:
+    - name: topic
+      type: slot
+      value: theater
+    text: "In the courtyard of the Pica Barracks in S. Maria Capua Vetere."
+  - condition:
+    - name: topic
+      type: slot
+      value: domus_confuleius
+    text: "It is located under a private condominium in Corso Aldo Moro in Santa Maria Capua Vetere. It is accessed via a double flight of stairs."
+  - condition:
+    - name: topic
+      type: slot
+      value: domus_orti
+    text: "You enter the 'domus' from Via degli Orti in Santa Maria Capua Vetere, that is, from where the garden originally stood, which played a very important role in Roman houses, delighted guests."
+  - condition:
+    - name: topic
+      type: slot
+      value: peculiaris
+    text: "It's saved in the Museo Campano , in Capua."
+  utter_ancient_location:
+  - condition:
+    - name: topic
+      type: slot
+      value: arch
+    text: "Located along the Via Appia, just before the entrance to the ancient city of Capua, is a triumphal arch known by various names such as Arch of Hadrian, Arches of Capua or Arco Felice. The monument is dated to the Flavian era or towards the beginning of the second century a.D. The chronological considerations, however, have been advanced on the basis of architecture, since there is a lack of dedicatory epigraph and decorative elements."
+  - condition:
+    - name: topic
+      type: slot
+      value: cryptoporticus
+    text: "The cryptoporticus, in ancient times, was defined by a grandiose terrace overlooking the Via Appia; the latter ran through the city with a straight path, perpetuated approximately by Corso Aldo Moro. The cryptoporticus forms the basement of a large quadrangular building, with two floors, arranged around a large internal courtyard and defined by two ramps that emphasize its elevated position above street level. The cryptoporticus, in reticulated work with some sections in brick work, is part of an important urban and monumental context of the ancient city of Capua in the second half of the 1st century b.C."
+  - condition:
+    - name: topic
+      type: slot
+      value: theater
+    text: "The first mention of the theater is due to Mazzocchi who in 1727 reported its location near the cryptoporticus and the Tower of S. Erasmo, complaining of the deterioration of the structures already in his time."
+  - condition:
+    - name: topic
+      type: slot
+      value: conocchia
+    text: "Conocchia is a monumental tomb, located along the ancient Via Appia in the municipality of Curti, which is dated between the end of the Republican age and the beginning of the imperial age."
+  - text: "I do not know where {topic} was located in ancient time"
+  utter_ancient_appearance:
+  - condition:
+      - name: topic
+        type: slot
+        value: arch
+    text: "We had originally three archways, but only one of these remains today, together with three of the four pillars that made it up."
+  - text: "I do not know how {topic} originally was."
+
+  utter_dimension:
+  - condition:
+      - name: topic
+        type: slot
+        value: arch
+    text: "The arch reaches a height of 10 m and a width of 18.5 m."
+  - condition:
+      - name: topic
+        type: slot
+        value: cryptoporticus
+    text: "The ancient building has three arms with a single nave covered by barrel vaults; the side ones are 107 m long while the bottom one is 90.7 m long and all retain a width of 7.10 m."
+  - condition:
+      - name: topic
+        type: slot
+        value: conocchia
+    text: "The sepulcher is 16.6 m high overall and appears today embedded in the ground, since its original floor is about 1.5 m lower than the current floor." 
+  - condition:
+      - name: topic
+        type: slot
+        value: domus_confuleius
+    text: "We don't know the exact dimensions but the domus consists of two rooms with a barrel vault adhering to the south side with a circular skylight."   
+  - condition:
+      - name: topic
+        type: slot
+        value: domus_orti
+    text: "We do not know the exact dimensions but the domus is currently only open to a small part compared to what archaeologists assume to be large, the rest of the building is under the foundations of the buildings in front."
+  - condition:
+      - name: topic
+        type: slot
+        value: theater
+    text: "The theater is second in size only to the Colosseum in Rome. Outside the major axis measured 177 meters while the minor axis was 139 meters. The external structure had 4 floors with a total height of 46 meters, all of Tuscan order."     
+
+  utter_monument_date:
+  - condition:
+      - name: topic
+        type: slot
+        value: arch
+    text: "The monument is dated to the Flavian era or towards the beginning of the second century a.D. The chronological considerations, however, have been advanced on the basis of architecture, since there is a lack of dedicatory epigraph and decorative elements."   
+  - condition:
+      - name: topic
+        type: slot
+        value: conocchia
+    text: "The monument is dated between the end of the Republican age and the beginning of the imperial age."
+  - condition:
+      - name: topic
+        type: slot
+        value: cryptoporticus
+    text: "The cryptoporticus is part of an important urban and monumental context of the ancient city of Capua in the second half of the 1st century b.C."     
+  - condition:
+      - name: topic
+        type: slot
+        value: domus_confuleius
+    text: "The domus is an important testimony of the social fabric of ancient Capua in the first half of the first century b.C., in which the subordinate classes, through the production and trade of goods, held economic power." 
+  - condition:
+      - name: topic
+        type: slot
+        value: domus_orti
+    text: "The life of the domus began in the imperial age and continued in late antiquity (up to the fifth century a.D.) undergoing numerous renovations to enrich and embellish the structure, evidence of the owner's wealth and the re-flowering of the ancient city of Capua."
+  - condition:
+      - name: topic
+        type: slot
+        value: theater
+    text: "The theater is a Roman theater dated between late 1st century and early 2nd century AD."
+
+  utter_monument_discovered:
+  - condition:
+      - name: topic
+        type: slot
+        value: theater
+    text: "The remains of the theater are not preserved, however it is known thanks to a rich antiquarian tradition. The first mention of the monument is due to Mazzocchi who in 1727 reported its location near the cryptoporticus and the Tower of S. Erasmo, complaining of the deterioration of the structures already in his time. The structures were never completely buried and this has favored all the stripping works of its architectural apparatus."   
+  - condition:
+      - name: topic
+        type: slot
+        value: domus_confuleius
+    text: "The so-called domus of Confuleius, also known as Bottega del Tintore, was discovered in 1955, during the works for the construction of the modern building"
+  - condition:
+      - name: topic
+        type: slot
+        value: domus_orti
+    text: "The domus orti was discovered at the beginning of the 70s, during the works for the construction of a school building."     
+
+  utter_monument_restoration:
+  - condition:
+      - name: topic
+        type: slot
+        value: arch
+    text: "The most important restoration was that carried out by the Bourbons in the mid-nineteenth century due to the state of decay and the numerous lacerations that compromised the statics. In a first restoration project it was proposed that the works (shoring interventions and generalized compensation) be carried out paying attention to the differentiation of techniques, so as to be able to recognize “the old from the new”. Subsequently, however, due to the deterioration of the conditions of the structure, a more radical intervention was proposed in a second project aimed at a complete re-wrapping of the brick construction. In addition, it was indicated to put in place a covering in broad bricks in the upper part to ensure greater protection from atmospheric agents. The proposed works, known thanks to archival documentation, are recognizable in the conditions of the arch as it appears today. Over time, however, the monument has received further restoration works. Another restoration took place in the years following 1883 to remedy the damage caused by the battle of the Volturno in 1860 while other interventions were carried out between 1945 and 1953-55 following the events of World War II. On that occasion, various infill walls were carried out, demolition of part of the previous restorations and a partial reconstruction of the surviving vault; these restorations also involved the re-wrapping of the plinths in polygonal tuff blocks. A last restoration, carried out in the seventies, helped to flatten the top of the surviving arch on the side pillars." 
+  - condition:
+      - name: topic
+        type: slot
+        value: conocchia
+    text: "The current appearance and conservation of the monument owe a lot to the restoration promoted by Ferdinand IV, as the epigraph recalls, affixed to the facade at the top of the door in the central body. The restoration, carried out with great care, is evident above all in the shooting of the uncertain work, which closes the guttings and integrates the shortcomings, reshapes the frames and covers the top with a new cap. Another restoration was carried out between the 1950s and 60s of the twentieth century, where the photographic documentation from 1957 highlights the shortcomings in some points of the walls that appear, however, compensated for in images from 1962."
+  - condition:
+      - name: topic
+        type: slot
+        value: domus_orti
+    text: "The 'frigidarium' is one of the oldest parts of the 'domus' and has been the subject of restorations over the years, as evidenced by the two floors. , more recent, features white mosaic tiles."  
+
+  utter_monument_material:
+  - condition:
+      - name: topic
+        type: slot
+        value: arch
+    text: "The arch is built in brick and originally had a white limestone cladding, now lost while the pillars are covered at the base with white limestone blocks and are lightened by niches with arched cover. The holes in the brick structure allow us to hypothesize the presence of columns that framed the niches and had to support an entablature that ran above the arches." 
+  - condition:
+      - name: topic
+        type: slot
+        value: conocchia
+    text: "The base has heavier stone elements embedded in the concrete (bricks and tuffaceous fragments); it is assumed that lighter materials, such as tuff blocks and alveolar lava flakes, were the structure of the upper terminal part."
+  - condition:
+      - name: topic
+        type: slot
+        value: cryptoporticus
+    text: "The arcades are large and artificially arched, so intact that the stucco can still be seen almost everywhere, hard, white, lined with lines that mimic the shape of the freestone."         
+
+  utter_architecture_info:
+  - condition:
+      - name: topic
+        type: slot
+        value: arch
+    text: "Made with a brick facing, it was probably covered with applied architectural elements, such as cornices and columns, as suggested by stone remains in white limestone, incorporated into the structure, and the shutter holes still visible. The pillars rest on an enlarged base made of parallelepiped blocks in white limestone and are distinguished by slender elongated and arched niches. Of considerable interest for the study of the original form of the arch are the drawings depicting it between the eighteenth and nineteenth centuries, which can, at times, help to provide details, of which otherwise would not be known. Over time, various artists and travelers have depicted the monument as it appeared to their eyes, sometimes in a more picturesque and suggestive way, others more realistic. Particular artistic and documentary value is attributed to the design of the arch by Carlo Labruzzi."
+  - condition:
+      - name: topic
+        type: slot
+        value: conocchia
+    text: "The monument, consisting of a quadrangular base that houses the burial chamber, is surmounted by a slender parallelepiped characterized, on all four sides, by exedra wings containing aedicules and framed by round angular pillars. Above it rises a cylindrical body, always slender, characterized by a slightly wider smooth base and by a tambour with semi-columns comprising flat niches, covered in arches; a small dome crowns the top. The burial chamber can be accessed via an entrance that restores the old one, on the front of the ancient Via Appia. The room, preceded by a small entrance, is quadrangular in shape with walls that house three niches on each side, except for the entrance that houses two, one on each side of the door. The sepulcher probably did not look directly onto the ancient road, but must have been preceded by a funerary enclosure, the remains of which could be preserved under the current roadway of the road. Thanks to its architectural form and location along the Via Appia, the Conocchia attracted the attention of artists and travelers as early as the sixteenth century and especially in the eighteenth and nineteenth centuries. In the sixteenth century a drawing by Pirro Ligorio seems to propose the representation of this ancient sepulcher. Among the various drawings, that of Carlo Labruzzi, executed in 1789 during his journey along the Appian Way, is of particular documentary interest."
+  - condition:
+      - name: topic
+        type: slot
+        value: domus_confuleius
+    text: "The rooms of the domus, side by side and communicating with each other, rectangular in shape covered by barrel vaults, are accessible via a double flight staircase separated by a landing. The walls and vaults of the rooms, each equipped with a circular skylight on the top, are largely covered with plaster painted in the manner of the so-called early Pompeian style. The first of the rooms has a rectangular basin with a circular well next to it and is separated from the next by an arched door. Both rooms retain splendid floors inside which inscriptions are also inserted. The floor carpets of the two rooms are in perfect condition: a brick background houses mosaics with black and white mosaic tiles that define geometric and vegetal shapes."
+  - condition:
+      - name: topic
+        type: slot
+        value: domus_orti
+    text: "The domus is accessed from the rear, through the garden, as the main entrance has not been identified. The complex is divided into numerous rooms and features a spa sector facing a porticoed garden with fountain and nymphaeum. Inside the domus there are several remains of flooring: these are brick, tessellated and sectilia orders." 
+  - condition:
+      - name: topic
+        type: slot
+        value: theater
+    text: "The structure, like all amphitheaters, had an elliptical plan and due to its size it contended for primacy with the Flavian Amphitheater in Rome with which it shares various architectural solutions, so much so as to suggest that it was used directly as a model for the construction of the latter. 'external the major axis measured 177 meters while the minor axis was 139 meters. The external structure had 4 floors with a total height of 46 meters, all of Tuscan order. The three lower floors consisted of 80 arches each of travertine and the arch keys were adorned with busts of divinities, seven of these are visible on the facade of the Municipal Palace of Capua, others are exhibited in the city museum."     
+
+  utter_monument_function:
+  - condition:
+      - name: topic
+        type: slot
+        value: arch
+    text: "The monument probably occupied a prominent position in the ancient landscape: it stood on the road at the end of the long straight that the Appia led from Casilinum. In this way, placed at the top of a climb, it opened the view on the ancient city of Capua, constituting a sort of ideal entrance."
+  - condition:
+      - name: topic
+        type: slot
+        value: cryptoporticus
+    text: "The cryptoporticus has been affected by numerous interventions and different destinations over time, while still retaining an important role in the urban fabric of the city. In the early 1600s, a convent was erected in correspondence with an arm of the cryptoporticus, with an adjoining chapel, dedicated to San Francesco di Paola. In 1700 stables were installed there to house a regiment of the royal cavalry. The cryptoporticus is depicted in a drawing by Carlo Labruzzi from the end of the eighteenth century. The convent, destroyed by an earthquake and a fire, was suppressed in 1810 and with it also the part reserved for the stables. Between the beginning and the mid-1800s, the transformation into a prison took place, which constitutes the most incisive and striking phase of the restructuring of the complex. The building was the most important central prison in Terra di Lavoro until its disposal in the late 1900s, when the complex became the seat of the Faculty of Letters and Philosophy of the Second University of Naples until 2016."  
+
+  utter_monument_depictions:
+  - condition:
+      - name: topic
+        type: slot
+        value: cryptoporticus
+    text: "The cryptoporticus is depicted in a drawing by Labruzzi from the end of the eighteenth century, before the works for the construction of the prison. The drawing shows a non-ancient entrance in the foreground, made by obliterating reticulated opus structures on the left and brickwork on the right, where the ferrule of an arch also in brick buffered in non-ancient blocks is also outlined. One of the arms is highlighted, illuminated by windows on the right side only, with the headboard on the bottom. The only perplexity regarding Labruzzi's design: the absence of mangers in the cryptoporticus, pertinent to the chivalry of the eighteenth century, however, if we want to give credit to the artist, they must be considered made during the nineteenth century."
+  - condition:
+      - name: topic
+        type: slot
+        value: conocchia
+    text: "Carried out in 1789 during his journey along the Appian Way, the drawing by Carlo Labruzzi is of particular documentary interest as it takes up the tomb at a time prior to the Bourbon restoration. The artist's care lies in the documentation of the monument as it appeared and in the choice of the frame that would be able to highlight the construction features. The double frame is depicted on the top of the columns of the second parallelepiped; the ovoli frame under the notched frame of the base nut; the base of the half-columns of the upper drum and the double frame with intermediate cavity on the top of the same drum. All these details are not found in the current configuration of the monument."  
+  - condition:
+      - name: topic
+        type: slot
+        value: arch
+    text: "Carlo Labruzzi's drawing was drawn up on the occasion of the journey along the Appian Way which he undertook in the autumn of 1789 from Rome to Benevento. The artist's care lies in the documentation of the monument as it appeared and in the choice of the frame that would be able to highlight the construction features. The brick structure, the two rows of blocks below each of the pillars, the ladder and the niche that housed the sacred shrine are depicted on the arch, taken three-quarters from the side of the entrance to the city."
+  - condition:
+      - name: topic
+        type: slot
+        value: theater
+    text: "The artist's drawing, on the occasion of his journey along the Via Appia, shows how the theater structures were then conspicuous despite the destruction complained of in the writings of Mazzocchi and Pratilli. The artist's care lies in the documentation of the monument as it appeared and in the choice of the frame that would be able to highlight the construction features. Labruzzi's drawing shows a large preserved portion of ambulatory in brick work, probably with a double order, leaning against a two-storey house which, due to its semicircular shape, was supposed to insist on and incorporate other remains of the monument."  
+  - condition:
+      - name: topic
+        type: slot
+        value: fattori
+    text: "The painting 'The battle of the Volturno (Porta Capuana)'' was deposited at the Modern Art Gallery of Palazzo Pitti in 1976. The battle of the Volturno indicates some armed clashes that took place between the Garibaldi volunteers and the Bourbon troops, which took place between 26 September and 2 October 1860 near the Volturno river, during the expedition of the Thousand. The territory involved in the war is located in the current province of Caserta, roughly delimited in a triangle having the vertices in the cities of Capua, Caiazzo and Maddaloni."
+  - condition:
+      - name: topic
+        type: slot
+        value: peculiaris
+    text: "The figurative relief by Lucceius Peculiaris portrays on the left a machine, activated by men, which lifts a monolithic column and next to it a seated worker who carves a capital. At the center of the relief is the Capitoline triad with Minerva standing with a helmet, Jupiter on the throne with rod and lightning in his hands, Diana with bow and quiver and Juno with patera and cornucopia. On the right there is a snake, the Genius theatri, as also indicated in the epigraphic text below. The elements depicted show a close relationship of continuity between the temple and the theatrical building."  
+
+  utter_monument_epigraph:
+  - condition:
+      - name: topic
+        type: slot
+        value: arch
+    text: "In 1860 it was affected by the fighting of the Volturno battle and a commemorative plaque, with a text dictated by Luigi Settembrini was placed on one of the pillars of the arch."
+  - condition:
+      - name: topic
+        type: slot
+        value: conocchia
+    text: "Today an epigraph testifies to its important restoration which reads: 'Me superstitem antiquitatis molem / senio confectam et iam iam ruituram / rex ferdinandus IV, pater patriae, / ab imo suffultam reparavit.' that means : 'Me, a survivor of the ancient age, crossed by corruption and now on the verge of ruin, King Ferdinand IV, father of the homeland, reinvigorated the bases and restored.' "  
+  
+  utter_name_meaning:
+  - condition:
+      - name: word
+        type: slot
+        value: tomb
+    text: "The denomination Conocchia (from the medieval Latin conuccla = rock for spinning) was used in the Middle Ages to indicate a certain type of mausoleums, the spire one, whose tapered shape recalled that of the textile instrument."
+  - condition:
+      - name: word
+        type: slot
+        value: triclinium
+    text: "In the stately homes of ancient Rome, the dining room, so called by the three beds (also called a triclinium as a whole) arranged on three sides of the table and on which, three by three, the guests were arranged."  
+  - condition:
+      - name: word
+        type: slot
+        value: cubiculum
+    text: "In the ancient Roman house, the cubiculum (from the Latin from 'cubicŭlum' meaning 'to lie') was the room intended for the night rest of children and secondary members of the family, while the father and mother slept in the tablinum."
+  - condition:
+      - name: word
+        type: slot
+        value: opus_sectile
+    text: "The opus sectile is an ancient artistic technique that uses marbles (or, in some cases, also glass pastes) cut to create inlay flooring and wall decorations, also called later, depending on the materials used, marble or marble salesman. hard stones."  
+  - condition:
+      - name: word
+        type: slot
+        value: sagum
+    text: "The sagum or sago was a type of heavy wool cloak, often associated with the low-ranking military and common soldiers of ancient Rome; in this it is opposed to the paludamentum, which was worn by generals or high-ranking officers."
+  - condition:
+      - name: word
+        type: slot
+        value: pompeian_style
+    text: "Under the term Pompeian painting we summarize all the wall painting present in the houses of Pompeii of the period between the end of the 2nd century BC. and 79 A.D. The Pompeian mural works were carried out in fresco, tempera and encaustic.
+           1) The fresco painting was performed on fresh lime plaster with ground colors and diluted in water.
+           2) Tempera painting was done by diluting the colors in sticky and gummy solvents, with egg yolk and wax.
+           3) Encaustic painting, on the other hand, was obtained with colors mixed with wax."  
+  - condition:
+      - name: word
+        type: slot
+        value: brick_work
+    text: "The term 'brick work' or 'masonry equipment' refers to the arrangement of the stone segments or brick bricks in a continuous series of a building according to a decorative scheme."  
+
+  utter_who_is:
+  - condition:
+      - name: topic
+        type: slot
+        value: cryptoporticus
+    text: "Carlo Labruzzi, born in Rome on November 6, 1748 and died in Perugia on December 8, 1817 (age 69), is an Italian painter and engraver of the eighteenth and early nineteenth centuries."
+  - condition:
+      - name: topic
+        type: slot
+        value: peculiaris
+    text: "Lucceius Peculiaris is a name that brings back to the daily life of the alter Rome of the 2nd century AD, a name linked to the restoration work of the ancient theater of Capua, the name of a Roman 'entrepreneur' who intended to pass on the memory of his work over the centuries."
+  - condition:
+      - name: topic
+        type: slot
+        value: domus_confuleius
+    text: "Publio Confuleio Sabbione was a slave of oriental origin to whom the Domus Confuleius belonged. In this domus he not only sold but also worked the sagum, a heavy wool cloak used by low-ranking soldiers, and hence the qualification of sagarius."
+  - condition:
+      - name: topic
+        type: slot
+        value: fattori
+    text: "Giovanni Fattori (Livorno, 6 September 1825 - Florence, 30 August 1908) was an Italian painter and engraver. He is considered one of the greatest Italian painters of the nineteenth century and one of the main exponents of the Macchiaioli movement."    
+
+  utter_domus_rooms:
+  - condition:
+      - name: topic
+        type: slot
+        value: domus_confuleius
+    text: "The domus confuleius is made up of two rooms with a barrel vault that had to be originally finely decorated both on the walls with frescoes and on the floors, with mosaics in geometric and vegetal shapes with black and white tesserae on a reddish earthenware background."
+  - condition:
+      - name: topic
+        type: slot
+        value: domus_orti
+    text: "The complex is divided into numerous rooms and features a spa sector facing a porticoed garden with fountain and nymphaeum. Inside the domus there are several remains of flooring: these are brick, tessellated and sectilia orders."
+
+  utter_domus_confuleius_inscriptions:
+  - condition:
+      - name: topic
+        type: slot
+        value: second_confuleius
+    text: "Thanks to the floor inscription in the second room, we know that the domus belonged to a certain Publius Confuleio, perhaps a slave freed to the gens Confuleia. From the inscription emerges the pride of a freedman who wanted to leave his mark, to anyone who entered the domus, of his social ascent: a man who from slave to freedman built his house from the foundations to the top, also paying attention to the care of the environments dedicated to work. The inscription also shows the name of the architect of the domus, Titus Safinus Pollio, and his social status. Immediately after the transition between the first and the second environment there is also another inscription: a well-wishing inscription 'I wish all things would go well'."
+
+  utter_domus_confuleius_inscriptions_location:
+  - condition:
+      - name: topic
+        type: slot
+        value: second_confuleius
+    text: "The inscriptions are situated on the floor inscription in the second room."
+
+  utter_current_state:
+  - condition:
+      - name: topic
+        type: slot
+        value: arch
+    text: "We had originally three archways, but only one of these remains today, together with three of the four pillars that made it up. The current state of the monument, however, appears different from the ancient one not only due to the ruin of the structures over time, but also due to the numerous restorations, which have strongly affected the original appearance."
+  - condition:
+      - name: topic
+        type: slot
+        value: conocchia
+    text: "The current appearance and conservation of the monument owe a lot to the restoration promoted by Ferdinand IV, as the epigraph recalls, affixed to the facade at the top of the door in the central body. The restoration, carried out with great care, is evident above all in the shooting of the uncertain work, which closes the guttings and integrates the shortcomings, reshapes the frames and covers the top with a new cap. Another restoration was carried out between the 1950s and 60s of the twentieth century, where the photographic documentation from 1957 highlights the shortcomings in some points of the walls that appear, however, compensated for in images from 1962."
+  - condition:
+      - name: topic
+        type: slot
+        value: cryptoporticus
+    text: "The cryptoporticus has been affected by numerous interventions and different destinations over time, while still retaining an important role in the urban fabric of the city. In the early 1600s, a convent was erected in correspondence with an arm of the cryptoporticus, with an adjoining chapel, dedicated to San Francesco di Paola. In 1700 stables were installed there to house a regiment of the royal cavalry. The convent, destroyed by an earthquake and a fire, was suppressed in 1810 and with it also the part reserved for the stables. Between the beginning and the mid-1800s, the transformation into a prison took place, which constitutes the most incisive and striking phase of the restructuring of the complex. The building was the most important central prison in Terra di Lavoro until its disposal in the late 1900s, when the complex became the seat of the Faculty of Letters and Philosophy of the Second University of Naples until 2016."
+  - condition:
+      - name: topic
+        type: slot
+        value: domus_confuleius
+    text: "The current state of the domus confuleius is almost identical to the past one, except for the frescoes on the walls of which only traces remain."
+  - condition:
+      - name: topic
+        type: slot
+        value: domus_orti
+    text: "Today, in most cases, the original roofs of the rooms are no longer there because the roofs, being made up of wooden beams covered with tiles or bent tiles, are the first to fall, either due to sagging of the wood or intentional destruction, such as the fire of ancient Capua after it had been occupied by the Vandals. Wind, rain and bad weather also damaged the wall structures. Only a residential part of the Domus has been identified, with the dining room and the spa sector."
+  - condition:
+      - name: topic
+        type: slot
+        value: theater
+    text: "After the fall of the Western Roman Empire, the amphitheater was destroyed by the Vandals of Genserico and, during the war of succession of the Duchy of Benevento in 841, by the Saracens together with the city. The plundering work was truly ferocious: the large boulders were broken to remove the bronze and lead that joined them and the smaller stones were used to pave the road. The external structure had 4 floors with a total height of 46 meters, all of Tuscan order. The three lower floors consisted of 80 arches each of travertine and the arch keys were adorned with busts of divinities, seven of these are visible on the facade of the Municipal Palace of Capua, others are exhibited in the city museum. Some remains are visible in the Campano Museum of the city of Capua and in the Archaeological Museum of the ancient Capua di Santa Maria Capua Vetere. Others are instead in the National Archaeological Museum of Naples, such as the Venus of Capua found in the area where the amphitheater stands."
+
+  utter_domus_confuleius_rooms:
+  - condition:
+      - name: topic
+        type: slot
+        value: first_confuleius
+    text: "The first room is divided in half by a narrow rectangular band made up of circles with central crosses. This strip divides the room into two different floor decorations:
+            1) to the north a rectangular carpet of rhombuses with white tiles framed by alternately black and white tiles.
+            2) to the south a square, surrounded on all four sides by plant-themed decorations, with a circle in the center decorated with an external band of meanders and an internal one with wedges, and framed by an expanse of crosses.
+            In this room there is a rectangular basin and a circular well which were most likely used for the processing of segum and therefore suggest a vestibular function of this first room."
+  - condition:
+      - name: topic
+        type: slot
+        value: second_confuleius
+    text: "The second room is accessed through an opening in the west wall of the first room with rectangular carpet flooring divided into squares with crosses in the center. As soon as you enter there is a mosaic inscription bearing a wish to visitors: 'I wish all things go well for us.'
+           Next to these inscriptions is the other inscription seen before with the indication of the owner and the architect. As for the first room, the second also has two types of decorations divided by the two inscriptions:
+           1) to the north a carpet of hexagons with crosses in the center
+           2) to the south a rectangular band with plant-themed decorations and to follow a carpet of swastika meanders with a square of crosses in the center that frame a rose window with intersecting circles and arches."
+  
+  utter_domus_confuleius_floors:
+  - condition:
+      - name: topic
+        type: slot
+        value: first_confuleius
+    text: "In the first room a narrow rectangular band with circles that include central crosses divides two different types of floor decoration: on one side a rectangular carpet of rhombuses with white tiles framed, in turn, by black and white tiles, on the other an expanse of crocette encloses a square surrounded at the four corners by plant motifs with a shield with a pinwheel motif in the center, included in an external meander band."
+  - condition:
+      - name: topic
+        type: slot
+        value: second_confuleius
+    text: "In the second room the inscription by Publio Confuleio divides the two types of floor decoration: on one side a carpet of hexagons each enclosing a cross, on the other, after a plant-themed band decoration, follows a carpet of swastika meanders that frame a large central rose window."  
+
+actions:
+- action_set_Topic
+- send_Topic
+forms: {}
+e2e_actions: []    

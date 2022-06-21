@@ -1,0 +1,963 @@
+[
+  {
+    "text": "cryptoporticus",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "cryptoporticus",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "theater",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "theater",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me about the domus",
+    "entities": [
+      {
+        "start": 18,
+        "end": 23,
+        "value": "domus",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "confuleius",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "domus_confuleius",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "domus orti",
+    "entities": [
+      {
+        "start": 6,
+        "end": 10,
+        "value": "domus_orti",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Where is the Arco di Capua located?",
+    "entities": [
+      {
+        "start": 13,
+        "end": 17,
+        "value": "arch",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is the position of Conocchia?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 33,
+        "value": "conocchia",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is the position of cryptoporticus?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 38,
+        "value": "cryptoporticus",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Where is the theater?",
+    "entities": [
+      {
+        "start": 13,
+        "end": 20,
+        "value": "theater",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Where I can visit the domus confuleius?",
+    "entities": [
+      {
+        "start": 28,
+        "end": 38,
+        "value": "domus_confuleius",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Where is it possible to visit the remains of the domus orti?",
+    "entities": [
+      {
+        "start": 55,
+        "end": 59,
+        "value": "domus_orti",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Where is the relief of Lucceius Peculiaris kept?",
+    "entities": [
+      {
+        "start": 32,
+        "end": 42,
+        "value": "peculiaris",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Where was the arch located in the ancient landscape?",
+    "entities": [
+      {
+        "start": 14,
+        "end": 18,
+        "value": "arch",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "In which original place of the city was the cryptoporticus situated?",
+    "entities": [
+      {
+        "start": 44,
+        "end": 58,
+        "value": "cryptoporticus",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "In which original place of the city was the theater situated?",
+    "entities": [
+      {
+        "start": 44,
+        "end": 51,
+        "value": "theater",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What represented Conocchia long time ago?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 26,
+        "value": "conocchia",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How was the  arch characterized in ancient times?",
+    "entities": [
+      {
+        "start": 13,
+        "end": 17,
+        "value": "arch",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How long and how high is the arch?",
+    "entities": [
+      {
+        "start": 29,
+        "end": 33,
+        "value": "arch",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How much is high and wide the cryptoporticus ?",
+    "entities": [
+      {
+        "start": 30,
+        "end": 44,
+        "value": "cryptoporticus",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How high is Conocchia?",
+    "entities": [
+      {
+        "start": 12,
+        "end": 21,
+        "value": "conocchia",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What are the measures of the domus confuleius?",
+    "entities": [
+      {
+        "start": 35,
+        "end": 45,
+        "value": "domus_confuleius",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What are the measures of the domus orti?",
+    "entities": [
+      {
+        "start": 35,
+        "end": 39,
+        "value": "domus_orti",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What are the measures of the theater?",
+    "entities": [
+      {
+        "start": 29,
+        "end": 36,
+        "value": "theater",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "when you date the bow",
+    "entities": [
+      {
+        "start": 18,
+        "end": 21,
+        "value": "arch",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "When you date Conocchia ?",
+    "entities": [
+      {
+        "start": 14,
+        "end": 23,
+        "value": "conocchia",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what epoch the cryptoporticus of Capua dates back to",
+    "entities": [
+      {
+        "start": 15,
+        "end": 29,
+        "value": "cryptoporticus",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "could you tell me the dating of the domus of Confuleius",
+    "entities": [
+      {
+        "start": 45,
+        "end": 55,
+        "value": "domus_confuleius",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "In which epoch the domus of Orti is placed?",
+    "entities": [
+      {
+        "start": 28,
+        "end": 32,
+        "value": "domus_orti",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "In which epoch the theater is placed?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 26,
+        "value": "theater",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "When was the theater  found?",
+    "entities": [
+      {
+        "start": 13,
+        "end": 20,
+        "value": "theater",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "When was the domus confuleius discovered?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 29,
+        "value": "domus_confuleius",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "When was the domus orti found?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 23,
+        "value": "domus_orti",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Any actions of restoration on the arch?",
+    "entities": [
+      {
+        "start": 34,
+        "end": 38,
+        "value": "arch",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me something about Conocchia restorations.",
+    "entities": [
+      {
+        "start": 24,
+        "end": 33,
+        "value": "conocchia",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Has the domus orti already undergone restorations in ancient times?",
+    "entities": [
+      {
+        "start": 14,
+        "end": 18,
+        "value": "domus_orti",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How this arch made",
+    "entities": [
+      {
+        "start": 9,
+        "end": 13,
+        "value": "arch",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How was the Conocchia built?",
+    "entities": [
+      {
+        "start": 12,
+        "end": 21,
+        "value": "conocchia",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Which techniques were used to build the  cryptoporticus?",
+    "entities": [
+      {
+        "start": 41,
+        "end": 55,
+        "value": "cryptoporticus",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How the arch  is built?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 12,
+        "value": "arch",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How Conocchia is made?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 13,
+        "value": "conocchia",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "triumphal arch",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "triumphal_arch",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How domus confuleius is built?",
+    "entities": [
+      {
+        "start": 10,
+        "end": 20,
+        "value": "domus_confuleius",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How domus in via degli Orti is made?",
+    "entities": [
+      {
+        "start": 23,
+        "end": 27,
+        "value": "domus_orti",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What are the architectural features about thater?",
+    "entities": [
+      {
+        "start": 42,
+        "end": 48,
+        "value": "theater",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How did the arch fit into the ancient landscape?",
+    "entities": [
+      {
+        "start": 12,
+        "end": 16,
+        "value": "arch",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How was used the cryptoporticus  in the past?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 31,
+        "value": "cryptoporticus",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How was the cryptoporticus of Carlo Labruzzi?",
+    "entities": [
+      {
+        "start": 12,
+        "end": 26,
+        "value": "cryptoporticus",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Do you know about ancient images of the Conocchia?",
+    "entities": [
+      {
+        "start": 40,
+        "end": 49,
+        "value": "conocchia",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Do you know about ancient images of the arch?",
+    "entities": [
+      {
+        "start": 40,
+        "end": 44,
+        "value": "arch",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What emerges from Carlo Labruzzi's drawing in the theater?",
+    "entities": [
+      {
+        "start": 50,
+        "end": 57,
+        "value": "theater",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Where is Giovanni Fattori's painting kept?",
+    "entities": [
+      {
+        "text": "Where is Giovanni Fattori's painting kept?",
+        "start": 18,
+        "end": 25,
+        "entity": "topic",
+        "value": "Fattori"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me something about Conocchia",
+    "entities": [
+      {
+        "start": 24,
+        "end": 33,
+        "value": "conocchia",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is represented on the Lucceius Peculiaris relief?",
+    "entities": [
+      {
+        "start": 36,
+        "end": 46,
+        "value": "peculiaris",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Is there a dedicatory epigraph of the arch ?",
+    "entities": [
+      {
+        "start": 38,
+        "end": 42,
+        "value": "arch",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is about the epigraph on the facade of Conocchia?",
+    "entities": [
+      {
+        "start": 44,
+        "end": 53,
+        "value": "conocchia",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Why is this tomb called conocchia?",
+    "entities": [
+      {
+        "start": 12,
+        "end": 33,
+        "value": "tomb",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What's about the triclinium ?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 27,
+        "value": "triclinium",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is the cubiculum?",
+    "entities": [
+      {
+        "start": 12,
+        "end": 21,
+        "value": "cubiculum",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is opus sectile?",
+    "entities": [
+      {
+        "start": 13,
+        "end": 20,
+        "value": "opus_sectile",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is sagum?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 13,
+        "value": "sagum",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is meant by \"first Pompeian style\"?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 32,
+        "value": "pompeian_style",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is the brick work?",
+    "entities": [
+      {
+        "start": 12,
+        "end": 17,
+        "value": "brick_work",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me about confuleius?",
+    "entities": [
+      {
+        "start": 14,
+        "end": 24,
+        "value": "domus_confuleius",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How many rooms belong to the domus confuleius",
+    "entities": [
+      {
+        "start": 35,
+        "end": 45,
+        "value": "domus_confuleius",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How many rooms belong to the domus orti?",
+    "entities": [
+      {
+        "start": 35,
+        "end": 39,
+        "value": "domus_orti",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What was Conocchia  used for?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 18,
+        "value": "conocchia",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How much arch is preserved?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 13,
+        "value": "arch",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How it is possible to enter the burial chamber?",
+    "entities": [
+      {
+        "start": 32,
+        "end": 38,
+        "value": "conocchia",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Is the cryptoporticus  different from the ancient time?",
+    "entities": [
+      {
+        "start": 7,
+        "end": 21,
+        "value": "cryptoporticus",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What does it mean  triclinium ?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 29,
+        "value": "triclinium",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "May I visit the domus confuleius?",
+    "entities": [
+      {
+        "start": 22,
+        "end": 32,
+        "value": "domus_confuleius",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How much of the domus orti can be seen and visited?",
+    "entities": [
+      {
+        "start": 22,
+        "end": 26,
+        "value": "domus_orti",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Why part of the theater was not preserved?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 23,
+        "value": "theater",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is in the first room of the confuleius domus?",
+    "entities": [
+      {
+        "start": 15,
+        "end": 20,
+        "value": "first_confuleius",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is in the second room of the confuleius domus?",
+    "entities": [
+      {
+        "start": 15,
+        "end": 21,
+        "value": "second_confuleius",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Describe me floor of the first room.",
+    "entities": [
+      {
+        "start": 25,
+        "end": 30,
+        "value": "first_confuleius",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Describe me floor of the second room.",
+    "entities": [
+      {
+        "start": 25,
+        "end": 31,
+        "value": "second_confuleius",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How many inscriptions are there in the domus confuleius?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 21,
+        "value": "second_confuleius",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Where are the domus confuleius inscriptions saved?",
+    "entities": [
+      {
+        "start": 31,
+        "end": 43,
+        "value": "second_confuleius",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Arco di Adriano",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "arch",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

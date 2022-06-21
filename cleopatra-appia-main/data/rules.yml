@@ -1,0 +1,120 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+
+- rule: Say that page has changed
+  steps:
+    - intent: EXTERNAL_page_change
+    - action: utter_EXTERNAL_page_change
+    - action: action_set_Topic
+
+- rule: after msg --> send json
+  steps:
+    - action: utter_what_is
+    - action: send_Topic
+
+- rule: after msg --> send json
+  steps:
+    - action: utter_where_is
+    - action: send_Topic  
+
+- rule: after msg --> send json
+  steps:
+    - action: utter_ancient_location
+    - action: send_Topic        
+
+- rule: after msg --> send json
+  steps:
+    - action: utter_ancient_appearance
+    - action: send_Topic     
+
+- rule: after msg --> send json
+  steps:
+    - action: utter_dimension
+    - action: send_Topic     
+
+- rule: after msg --> send json
+  steps:
+    - action: utter_monument_date
+    - action: send_Topic   
+
+- rule: after msg --> send json
+  steps:
+    - action: utter_monument_discovered
+    - action: send_Topic         
+
+- rule: after msg --> send json
+  steps:
+    - action: utter_monument_restoration
+    - action: send_Topic      
+
+- rule: after msg --> send json
+  steps:
+    - action: utter_monument_material
+    - action: send_Topic       
+
+- rule: after msg --> send json
+  steps:
+    - action: utter_architecture_info
+    - action: send_Topic           
+
+- rule: after msg --> send json
+  steps:
+    - action: utter_monument_function
+    - action: send_Topic  
+
+- rule: after msg --> send json
+  steps:
+    - action: utter_monument_depictions
+    - action: send_Topic      
+
+- rule: after msg --> send json
+  steps:
+    - action: utter_monument_epigraph
+    - action: send_Topic     
+
+# evito il name_meaning perche necessita di altra custom act
+
+- rule: after msg --> send json
+  steps:
+    - action: utter_who_is
+    - action: send_Topic   
+
+- rule: after msg --> send json
+  steps:
+    - action: utter_domus_rooms
+    - action: send_Topic        
+
+- rule: after msg --> send json
+  steps:
+    - action: utter_current_state
+    - action: send_Topic   
+
+- rule: after msg --> send json
+  steps:
+    - action: utter_domus_confuleius_inscriptions
+    - action: send_Topic       
+
+- rule: after msg --> send json
+  steps:
+    - action: utter_domus_confuleius_inscriptions_location
+    - action: send_Topic     
+    
+            
+
+
+
+       
+
+
+    
+
+
+    

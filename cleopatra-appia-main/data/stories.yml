@@ -1,0 +1,1162 @@
+version: "3.1"
+
+stories:
+
+# what is stories
+
+- story: what_is_arch
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: what_is  
+    entities:
+    - topic: arch  
+  - slot_was_set:
+    - topic: arch
+  - action: utter_what_is
+  - action: send_Topic
+  
+
+- story: what_is_triumphal_arch
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: what_is    
+    entities:
+    - topic: triumphal_arch  
+  - slot_was_set:
+    - topic: triumphal_arch
+  - action: utter_what_is
+  - action: send_Topic
+
+
+
+- story: what_is_conocchia
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: what_is    
+    entities:
+    - topic: conocchia  
+  - slot_was_set:
+    - topic: conocchia  
+  - action: utter_what_is
+  - action: send_Topic
+
+
+- story: what_is_cryptoporticus
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: what_is    
+    entities:
+    - topic: cryptoporticus  
+  - slot_was_set:
+    - topic: cryptoporticus
+  - action: utter_what_is
+  - action: send_Topic
+
+- story: what_is_theater
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: what_is 
+    entities:
+    - topic: theater  
+  - slot_was_set:
+    - topic: theater
+  - action: utter_what_is
+  - action: send_Topic
+
+- story: what_is_domus
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: what_is 
+    entities:
+    - topic: domus  
+  - slot_was_set:
+    - topic: domus 
+  - action: utter_what_is
+  - action: send_Topic
+
+- story: what_is_domus_confuleius
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: what_is 
+    entities:
+    - topic: domus_confuleius  
+  - slot_was_set:
+    - topic: domus_confuleius
+  - action: utter_what_is
+  - action: send_Topic
+
+- story: what_is_domus_orti
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: what_is 
+    entities:
+    - topic: domus_orti  
+  - slot_was_set:
+    - topic: domus_orti
+  - action: utter_what_is
+  - action: send_Topic   
+
+
+# where is stories
+
+- story: where_is_arch
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: where_is  
+    entities:
+    - topic: arch  
+  - slot_was_set:
+    - topic: arch
+  - action: utter_where_is
+  - action: send_Topic 
+
+- story: where_is_conocchia
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: where_is  
+    entities:
+    - topic: conocchia  
+  - slot_was_set:
+    - topic: conocchia
+  - action: utter_where_is
+  - action: send_Topic 
+
+- story: where_is_cryptoporticus
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: where_is  
+    entities:
+    - topic: cryptoporticus  
+  - slot_was_set:
+    - topic: cryptoporticus
+  - action: utter_where_is
+  - action: send_Topic 
+
+- story: where_is_theater
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: where_is  
+    entities:
+    - topic: theater  
+  - slot_was_set:
+    - topic: theater
+  - action: utter_where_is
+  - action: send_Topic 
+
+- story: where_is_domus_confuleius
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: where_is  
+    entities:
+    - topic: domus_confuleius  
+  - slot_was_set:
+    - topic: domus_confuleius
+  - action: utter_where_is
+  - action: send_Topic 
+
+- story: where_is_domus_orti
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: where_is  
+    entities:
+    - topic: domus_orti  
+  - slot_was_set:
+    - topic: domus_orti
+  - action: utter_where_is
+  - action: send_Topic 
+
+- story: where_is_peculiaris
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: where_is  
+    entities:
+    - topic: peculiaris  
+  - slot_was_set:
+    - topic: peculiaris
+  - action: utter_where_is
+  - action: send_Topic 
+
+
+
+# ancient location stories
+
+- story: ancient_location_arch
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: ancient_location  
+    entities:
+    - topic: arch  
+  - slot_was_set:
+    - topic: arch
+  - action: utter_ancient_location
+  - action: send_Topic 
+
+- story: ancient_location_cryptoporticus
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: ancient_location  
+    entities:
+    - topic: cryptoporticus  
+  - slot_was_set:
+    - topic: cryptoporticus
+  - action: utter_ancient_location
+  - action: send_Topic 
+
+- story: ancient_location_theater
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: ancient_location  
+    entities:
+    - topic: theater  
+  - slot_was_set:
+    - topic: theater
+  - action: utter_ancient_location
+  - action: send_Topic 
+
+- story: ancient_location_conocchia
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: ancient_location  
+    entities:
+    - topic: conocchia  
+  - slot_was_set:
+    - topic: conocchia
+  - action: utter_ancient_location
+  - action: send_Topic 
+
+
+# ancient appearance stories    
+
+- story: ancient_appearance_arch
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: ancient_appearance  
+    entities:
+    - topic: arch  
+  - slot_was_set:
+    - topic: arch
+  - action: utter_ancient_appearance
+  - action: send_Topic 
+
+
+# dimension stories
+
+- story: dimension_arch
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: dimension  
+    entities:
+    - topic: arch  
+  - slot_was_set:
+    - topic: arch
+  - action: utter_dimension
+  - action: send_Topic 
+
+- story: dimension_cryptoporticus
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: dimension  
+    entities:
+    - topic: cryptoporticus  
+  - slot_was_set:
+    - topic: cryptoporticus
+  - action: utter_dimension
+  - action: send_Topic 
+
+- story: dimension_conocchia
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: dimension  
+    entities:
+    - topic: conocchia  
+  - slot_was_set:
+    - topic: conocchia
+  - action: utter_dimension
+  - action: send_Topic 
+
+- story: dimension_domus_confuleuis
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: dimension  
+    entities:
+    - topic: domus_confuleuis  
+  - slot_was_set:
+    - topic: domus_confuleuis
+  - action: utter_dimension
+  - action: send_Topic 
+
+- story: dimension_domus_orti
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: dimension  
+    entities:
+    - topic: domus_orti  
+  - slot_was_set:
+    - topic: domus_orti
+  - action: utter_dimension
+  - action: send_Topic 
+
+- story: dimension_theater
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: dimension  
+    entities:
+    - topic: theater  
+  - slot_was_set:
+    - topic: theater
+  - action: utter_dimension
+  - action: send_Topic 
+
+
+# monuement_date stories
+
+- story: monument_date_arch
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_date  
+    entities:
+    - topic: arch  
+  - slot_was_set:
+    - topic: arch
+  - action: utter_monument_date
+  - action: send_Topic 
+
+- story: monument_date_conocchia
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_date  
+    entities:
+    - topic: conocchia  
+  - slot_was_set:
+    - topic: conocchia
+  - action: utter_monument_date
+  - action: send_Topic 
+
+- story: monument_date_cryptoporticus
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_date  
+    entities:
+    - topic: cryptoporticus  
+  - slot_was_set:
+    - topic: cryptoporticus
+  - action: utter_monument_date
+  - action: send_Topic 
+
+- story: monument_date_domus_confuleius
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_date  
+    entities:
+    - topic: domus_confuleius  
+  - slot_was_set:
+    - topic: domus_confuleius
+  - action: utter_monument_date
+  - action: send_Topic 
+
+- story: monument_date_domus_orti
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_date  
+    entities:
+    - topic: domus_orti  
+  - slot_was_set:
+    - topic: domus_orti
+  - action: utter_monument_date
+  - action: send_Topic 
+
+- story: monument_date_theater
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_date  
+    entities:
+    - topic: theater  
+  - slot_was_set:
+    - topic: theater
+  - action: utter_monument_date
+  - action: send_Topic 
+
+
+# monuement_discovered stories
+
+- story: monument_discovered_theater
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_discovered  
+    entities:
+    - topic: theater  
+  - slot_was_set:
+    - topic: theater
+  - action: utter_monument_discovered
+  - action: send_Topic
+
+- story: monument_discovered_domus_confuleius
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_discovered  
+    entities:
+    - topic: domus_confuleius  
+  - slot_was_set:
+    - topic: domus_confuleius
+  - action: utter_monument_discovered
+  - action: send_Topic
+
+- story: monument_discovered_domus_orti
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_discovered  
+    entities:
+    - topic: domus_orti  
+  - slot_was_set:
+    - topic: domus_orti
+  - action: utter_monument_discovered
+  - action: send_Topic
+ 
+
+# monuement_restoration stories
+
+- story: monument_restoration_arch
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_restoration  
+    entities:
+    - topic: arch  
+  - slot_was_set:
+    - topic: arch
+  - action: utter_monument_restoration
+  - action: send_Topic
+
+- story: monument_restoration_conocchia
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_restoration  
+    entities:
+    - topic: conocchia  
+  - slot_was_set:
+    - topic: conocchia
+  - action: utter_monument_restoration
+  - action: send_Topic
+
+- story: monument_restoration_domus_orti
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_restoration  
+    entities:
+    - topic: domus_orti  
+  - slot_was_set:
+    - topic: domus_orti
+  - action: utter_monument_restoration
+  - action: send_Topic
+
+
+# monuement_material stories
+
+- story: monuement_material_arch
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_material  
+    entities:
+    - topic: arch  
+  - slot_was_set:
+    - topic: arch
+  - action: utter_monument_material
+  - action: send_Topic
+
+- story: monuement_material_conocchia
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_material  
+    entities:
+    - topic: conocchia  
+  - slot_was_set:
+    - topic: conocchia
+  - action: utter_monument_material
+  - action: send_Topic
+
+- story: monuement_material_cryptoporticus
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_material  
+    entities:
+    - topic: cryptoporticus  
+  - slot_was_set:
+    - topic: cryptoporticus
+  - action: utter_monument_material
+  - action: send_Topic
+
+
+# architecture_info stories
+
+- story: architecture_info_arch
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: architecture_info  
+    entities:
+    - topic: arch  
+  - slot_was_set:
+    - topic: arch
+  - action: utter_architecture_info
+  - action: send_Topic
+
+- story: architecture_info_conocchia
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: architecture_info  
+    entities:
+    - topic: conocchia  
+  - slot_was_set:
+    - topic: conocchia
+  - action: utter_architecture_info
+  - action: send_Topic
+
+- story: architecture_info_domus_confuleius
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: architecture_info  
+    entities:
+    - topic: domus_confuleius  
+  - slot_was_set:
+    - topic: domus_confuleius
+  - action: utter_architecture_info
+  - action: send_Topic
+
+- story: architecture_info_domus_orti
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: architecture_info  
+    entities:
+    - topic: domus_orti  
+  - slot_was_set:
+    - topic: domus_orti
+  - action: utter_architecture_info
+  - action: send_Topic
+
+- story: architecture_info_theater
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: architecture_info  
+    entities:
+    - topic: theater  
+  - slot_was_set:
+    - topic: theater
+  - action: utter_architecture_info
+  - action: send_Topic
+
+
+# monument_function stories
+
+- story: monument_function_arch
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_function  
+    entities:
+    - topic: arch  
+  - slot_was_set:
+    - topic: arch
+  - action: utter_monument_function
+  - action: send_Topic 
+
+- story: monument_function_cryptoporticus
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_function  
+    entities:
+    - topic: cryptoporticus  
+  - slot_was_set:
+    - topic: cryptoporticus
+  - action: utter_monument_function
+  - action: send_Topic 
+
+
+# monument_depictions stories
+
+- story: monument_depictions_cryptoporticus
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_depictions  
+    entities:
+    - topic: cryptoporticus  
+  - slot_was_set:
+    - topic: labruzzi_cryptoporticus
+  - action: utter_monument_depictions
+  - action: send_Topic 
+
+- story: monument_depictions_conocchia
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_depictions  
+    entities:
+    - topic: conocchia  
+  - slot_was_set:
+    - topic: conocchia
+  - action: utter_monument_depictions
+  - action: send_Topic 
+
+- story: monument_depictions_arch
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_depictions  
+    entities:
+    - topic: arch  
+  - slot_was_set:
+    - topic: arch
+  - action: utter_monument_depictions
+  - action: send_Topic 
+
+- story: monument_depictions_theater
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_depictions  
+    entities:
+    - topic: theater  
+  - slot_was_set:
+    - topic: theater
+  - action: utter_monument_depictions
+  - action: send_Topic 
+
+- story: monument_depictions_fattori
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_depictions  
+    entities:
+    - topic: fattori  
+  - slot_was_set:
+    - topic: fattori
+  - action: utter_monument_depictions
+  - action: send_Topic 
+
+- story: monument_depictions_pecurialis 
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_depictions  
+    entities:
+    - topic: pecurialis  
+  - slot_was_set:
+    - topic: pecurialis
+  - action: utter_monument_depictions
+  - action: send_Topic 
+
+
+
+# monument_epigraph stories
+
+- story: monument_epigraph_arch
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_epigraph  
+    entities:
+    - topic: arch  
+  - slot_was_set:
+    - topic: arch
+  - action: utter_monument_epigraph
+  - action: send_Topic           
+
+- story: monument_epigraph_conocchia
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: monument_epigraph  
+    entities:
+    - topic: conocchia  
+  - slot_was_set:
+    - topic: conocchia
+  - action: utter_monument_epigraph
+  - action: send_Topic           
+
+
+# name_meaning stories
+
+- story: name_meaning_tomb
+  steps:
+  - intent: name_meaning  
+    entities:
+    - word: tomb  
+  - slot_was_set:
+    - word: tomb
+  - action: utter_name_meaning
+
+- story: name_meaning_triclinium
+  steps:
+  - intent: name_meaning  
+    entities:
+    - word: triclinium  
+  - slot_was_set:
+    - word: triclinium
+  - action: utter_name_meaning
+
+- story: name_meaning_cubiculum
+  steps:
+  - intent: name_meaning  
+    entities:
+    - word: cubiculum  
+  - slot_was_set:
+    - word: cubiculum
+  - action: utter_name_meaning
+
+- story: name_meaning_opus_sectile
+  steps:
+  - intent: name_meaning  
+    entities:
+    - word: opus_sectile  
+  - slot_was_set:
+    - word: opus_sectile
+  - action: utter_name_meaning
+
+- story: name_meaning_sagum
+  steps:
+  - intent: name_meaning  
+    entities:
+    - word: sagum  
+  - slot_was_set:
+    - word: sagum
+  - action: utter_name_meaning
+
+- story: name_meaning_pompeian_style
+  steps:
+  - intent: name_meaning  
+    entities:
+    - word: pompeian_style  
+  - slot_was_set:
+    - word: pompeian_style
+  - action: utter_name_meaning
+
+- story: name_meaning_brick_work
+  steps:
+  - intent: name_meaning  
+    entities:
+    - word: brick_work  
+  - slot_was_set:
+    - word: brick_work
+  - action: utter_name_meaning
+
+
+# who_is stories
+
+- story: who_is_labruzzi
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: who_is  
+    entities:
+    - topic: labruzzi  
+  - slot_was_set:
+    - topic: labruzzi
+  - action: utter_who_is
+  - action: send_Topic 
+
+- story: who_is_peculiaris
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: who_is  
+    entities:
+    - topic: peculiaris  
+  - slot_was_set:
+    - topic: peculiaris
+  - action: utter_who_is
+  - action: send_Topic 
+
+- story: who_is_domus_confuleius
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: who_is  
+    entities:
+    - topic: domus_confuleius  
+  - slot_was_set:
+    - topic: domus_confuleius
+  - action: utter_who_is
+  - action: send_Topic 
+
+- story: who_is_fattori
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: who_is  
+    entities:
+    - topic: fattori  
+  - slot_was_set:
+    - topic: fattori
+  - action: utter_who_is
+  - action: send_Topic 
+
+
+# domus_rooms stories
+
+- story: domus_rooms_domus_confuleius
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: domus_rooms  
+    entities:
+    - topic: domus_confuleius  
+  - slot_was_set:
+    - topic: domus_confuleius
+  - action: utter_domus_rooms
+  - action: send_Topic 
+
+- story: domus_rooms_domus_orti
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: domus_rooms  
+    entities:
+    - topic: domus_orti  
+  - slot_was_set:
+    - topic: domus_orti
+  - action: utter_domus_rooms
+  - action: send_Topic 
+
+
+# conocchia_enclosure stories
+
+- story: conocchia_enclosure
+  steps:
+  - intent: conocchia_enclosure
+  - action: utter_conocchia_enclosure
+
+# current_state stories
+
+- story: current_state_arch
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: current_state  
+    entities:
+    - topic: arch  
+  - slot_was_set:
+    - topic: arch
+  - action: utter_current_state
+  - action: send_Topic     
+
+- story: current_state_conocchia
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: current_state  
+    entities:
+    - topic: conocchia  
+  - slot_was_set:
+    - topic: conocchia
+  - action: utter_current_state
+  - action: send_Topic     
+
+- story: current_state_cryptoporticus
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: current_state  
+    entities:
+    - topic: cryptoporticus  
+  - slot_was_set:
+    - topic: cryptoporticus
+  - action: utter_current_state
+  - action: send_Topic     
+
+- story: current_state_domus_confuleius
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: current_state  
+    entities:
+    - topic: domus_confuleius  
+  - slot_was_set:
+    - topic: domus_confuleius
+  - action: utter_current_state
+  - action: send_Topic     
+
+- story: current_state_domus_orti
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: current_state  
+    entities:
+    - topic: domus_orti  
+  - slot_was_set:
+    - topic: domus_orti
+  - action: utter_current_state
+  - action: send_Topic     
+
+- story: current_state_theater
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: current_state  
+    entities:
+    - topic: theater  
+  - slot_was_set:
+    - topic: theater
+  - action: utter_current_state
+  - action: send_Topic     
+
+ 
+# domus_confuleius_rooms stories
+
+- story: domus_confuleius_rooms_first_confuleius
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: domus_confuleius_rooms  
+    entities:
+    - topic: first_confuleius  
+  - slot_was_set:
+    - topic: first_confuleius
+  - action: utter_domus_confuleius_rooms
+  - action: send_Topic     
+
+- story: domus_confuleius_rooms_second_confuleius
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: domus_confuleius_rooms  
+    entities:
+    - topic: second_confuleius  
+  - slot_was_set:
+    - topic: second_confuleius
+  - action: utter_domus_confuleius_rooms
+  - action: send_Topic 
+
+# current_state domus_confuleius_floors
+
+- story: current_state domus_confuleius_floors_first_confuleius
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: domus_confuleius_floors  
+    entities:
+    - topic: first_confuleius  
+  - slot_was_set:
+    - topic: first_confuleius
+  - action: utter_domus_confuleius_floors
+  - action: send_Topic 
+  
+
+- story: current_state domus_confuleius_floors_second_confuleius
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: domus_confuleius_floors  
+    entities:
+    - topic: second_confuleius  
+  - slot_was_set:
+    - topic: second_confuleius
+  - action: utter_domus_confuleius_floors
+  - action: send_Topic 
+
+
+
+
+# domus_confuleius_inscriptions stories
+
+- story: domus_confuleius_inscriptions
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: domus_confuleius_inscriptions
+    entities:
+    - topic: second_confuleius  
+  - slot_was_set:
+    - topic: second_confuleius
+  - action: utter_domus_confuleius_inscriptions   
+  - action: send_Topic
+
+# domus_confuleius_inscriptions_location stories
+
+- story: domus_confuleius_inscriptions_location
+  steps:
+  - intent: EXTERNAL_page_change
+  - action: utter_EXTERNAL_page_change
+  - action: action_set_Topic
+  - intent: domus_confuleius_inscriptions_location
+    entities:
+    - topic: second_confuleius  
+  - slot_was_set:
+    - topic: second_confuleius
+  - action: utter_domus_confuleius_inscriptions_location   
+  - action: send_Topic
+ 
+
+# domus_confuleius_owner stories
+
+- story: domus_confuleius_owner
+  steps:
+  - intent: domus_confuleius_owner
+  - action: utter_domus_confuleius_owner  
+
+# domus_via_orti_spa stories
+
+- story: domus_via_orti_spa
+  steps:
+  - intent: domus_via_orti_spa
+  - action: utter_domus_via_orti_spa  
+
+# domus_via_orti_thermal_rooms stories
+
+- story: domus_via_orti_thermal_rooms
+  steps:
+  - intent: domus_via_orti_thermal_rooms
+  - action: utter_domus_via_orti_thermal_rooms
+  - action: send_Topic 
+
+# domus_via_orti_cubiculum_floor stories
+
+- story: domus_via_orti_cubiculum_floor
+  steps:
+  - intent: domus_via_orti_cubiculum_floor
+  - action: utter_domus_via_orti_cubiculum_floor
+
+# domus_via_orti_triclinium_floor stories
+
+- story: domus_via_orti_triclinium_floor
+  steps:
+  - intent: domus_via_orti_triclinium_floor
+  - action: utter_domus_via_orti_triclinium_floor
+
+# domus_via_orti_entrance stories
+
+- story: domus_via_orti_entrance
+  steps:
+  - intent: domus_via_orti_entrance
+  - action: utter_domus_via_orti_entrance
+
+# bot_challenge stories
+
+- story: bot_challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+
+
+
+
+
+
+

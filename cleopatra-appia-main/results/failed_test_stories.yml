@@ -1,0 +1,18 @@
+version: "3.1"
+stories:
+- story: an_hello_storytest_false (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet  # predicted: utter_domus_via_orti_cubiculum_floor
+  - action: action_listen  # predicted: send_Topic
+- story: monument_depictions_fattori (.\tests\test_stories.yml)
+  steps:
+  - intent: monument_depictions
+    entities:
+    - topic: Fattori
+  - slot_was_set:
+    - topic: Fattori
+  - slot_was_set:
+    - topic: fattori
+  - action: utter_monument_depictions
+  - action: send_Topic

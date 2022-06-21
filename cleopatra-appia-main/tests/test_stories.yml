@@ -1,0 +1,1025 @@
+# dall'analisi delle test stories: bisogna aggiungere al dominio EXTERNAL_zoom, EXTERNAL_pan, EXTERNAL_annotation 
+#sono tutti intenti non definiti nel domain
+
+stories:
+- story: a simple storytest
+  steps:
+  - user: |
+      are you a bot?
+    intent: bot_challenge
+  - action: utter_bot_challenge
+
+- story: an_hello_storytest_false
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet 
+
+- story: a second storytest
+  steps:
+  - user: |
+      Has the original entrance to the domus been identified?
+    intent: domus_via_orti_entrance
+  - action: utter_domus_via_orti_entrance
+
+- story: what_is_triumphal arch #error nelle ted policy
+  steps:
+  - user: |
+      [triumphal arch]{"entity":"topic", "value":"triumphal_arch"}
+    intent: what_is   
+  - slot_was_set:
+    - topic: triumphal_arch
+  - action: utter_what_is
+  - action: send_Topic
+
+- story: what_is_conocchia
+  steps:
+  - user: |
+      Tell me something about [Conocchia]{"entity":"topic", "value":"conocchia"}
+    intent: what_is    
+    entities:
+    - topic: conocchia  
+  - slot_was_set:
+    - topic: conocchia  
+  - action: utter_what_is
+  - action: send_Topic
+
+- story: monument_date_domus_confuleius
+  steps:
+  - user: |
+      could you tell me the dating of the domus of [Confuleius]{"entity":"topic", "value":"domus_confuleius"}
+    intent: monument_date   
+  - slot_was_set:
+    - topic: domus_confuleius
+  - action: utter_monument_date
+  - action: send_Topic 
+
+- story: name_meaning_tomb
+  steps:
+  - user: |
+      What does it mean  [triclinium]{"entity":"word", "value":"triclinium"} ?
+    intent: name_meaning  
+    entities:
+    - word: tomb  
+  - action: utter_name_meaning
+
+- story: conocchia_enclosure
+  steps:
+  - user: |
+      What was a funerary enclosure used for?
+    intent: conocchia_enclosure
+  - action: utter_conocchia_enclosure
+
+- story: what_is_arch
+  steps:
+  - user: |
+      [Arco di Adriano]{"entity":"topic", "value":"arch"}
+    intent: what_is   
+  - slot_was_set:
+    - topic: arch
+  - action: utter_what_is
+  - action: send_Topic
+  
+- story: what_is_cryptoporticus
+  steps:
+  - user: |
+     [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"} 
+    intent: what_is    
+  - slot_was_set:
+    - topic: cryptoporticus
+  - action: utter_what_is
+  - action: send_Topic
+
+- story: what_is_theater
+  steps:
+  - user: |
+      [theater]{"entity":"topic", "value":"theater"}
+    intent: what_is   
+  - slot_was_set:
+    - topic: theater
+  - action: utter_what_is
+  - action: send_Topic
+
+- story: what_is_domus
+  steps:
+  - user: |
+      Tell me about the [domus]{"entity":"topic", "value":"domus"}
+    intent: what_is 
+  - slot_was_set:
+    - topic: domus 
+  - action: utter_what_is
+  - action: send_Topic
+
+- story: what_is_domus_confuleius
+  steps:
+  - user: |
+      [confuleius]{"entity":"topic", "value":"domus_confuleius"}
+    intent: what_is  
+  - slot_was_set:
+    - topic: domus_confuleius
+  - action: utter_what_is
+  - action: send_Topic
+
+- story: what_is_domus_orti
+  steps:
+  - user: |
+      domus [orti]{"entity":"topic", "value":"domus_orti"}
+    intent: what_is  
+  - slot_was_set:
+    - topic: domus_orti
+  - action: utter_what_is
+  - action: send_Topic   
+
+
+
+
+
+- story: where_is_arch
+  steps:
+  - user: |
+      Where is the [Arco]{"entity":"topic", "value":"arch"} di Capua located?
+    intent: where_is  
+  - slot_was_set:
+    - topic: arch
+  - action: utter_where_is
+  - action: send_Topic 
+
+- story: where_is_conocchia
+  steps:
+  - user: |
+      What is the position of [Conocchia]{"entity":"topic", "value":"conocchia"}?
+    intent: where_is  
+  - slot_was_set:
+    - topic: conocchia
+  - action: utter_where_is
+  - action: send_Topic 
+
+- story: where_is_cryptoporticus
+  steps:
+  - user: |
+      What is the position of [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"}?
+    intent: where_is    
+  - slot_was_set:
+    - topic: cryptoporticus
+  - action: utter_where_is
+  - action: send_Topic 
+
+- story: where_is_theater
+  steps:
+  - user: |
+      Where is the [theater]{"entity":"topic", "value":"theater"}?
+    intent: where_is   
+  - slot_was_set:
+    - topic: theater
+  - action: utter_where_is
+  - action: send_Topic 
+
+- story: where_is_domus_confuleius
+  steps:
+  - user: |
+      Where I can visit the domus [confuleius]{"entity":"topic", "value":"domus_confuleius"}?
+    intent: where_is  
+  - slot_was_set:
+    - topic: domus_confuleius
+  - action: utter_where_is
+  - action: send_Topic 
+
+- story: where_is_domus_orti
+  steps:
+  - user: |
+      Where is it possible to visit the remains of the domus [orti]{"entity":"topic", "value":"domus_orti"}?
+    intent: where_is   
+  - slot_was_set:
+    - topic: domus_orti
+  - action: utter_where_is
+  - action: send_Topic 
+
+- story: where_is_peculiaris
+  steps:
+  - user: |
+      Where is the relief of Lucceius [Peculiaris]{"entity":"topic", "value":"peculiaris"} kept?
+    intent: where_is    
+  - slot_was_set:
+    - topic: peculiaris
+  - action: utter_where_is
+  - action: send_Topic 
+
+
+
+
+
+
+- story: ancient_location_arch
+  steps:
+  - user: |
+      Where was the [arch]{"entity":"topic", "value":"arch"} located in the ancient landscape?
+    intent: ancient_location  
+  - slot_was_set:
+    - topic: arch
+  - action: utter_ancient_location
+  - action: send_Topic 
+
+- story: ancient_location_cryptoporticus
+  steps:
+  - user: |
+      In which original place of the city was the [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"} situated?
+    intent: ancient_location   
+  - slot_was_set:
+    - topic: cryptoporticus
+  - action: utter_ancient_location
+  - action: send_Topic 
+
+- story: ancient_location_theater
+  steps:
+  - user: |
+      In which original place of the city was the [theater]{"entity":"topic", "value":"theater"} situated?
+    intent: ancient_location   
+  - slot_was_set:
+    - topic: theater
+  - action: utter_ancient_location
+  - action: send_Topic 
+
+- story: ancient_location_conocchia
+  steps:
+  - user: |
+      What represented [Conocchia]{"entity":"topic", "value":"conocchia"} long time ago?
+    intent: ancient_location    
+  - slot_was_set:
+    - topic: conocchia
+  - action: utter_ancient_location
+  - action: send_Topic 
+
+
+
+
+- story: ancient_appearance_arch
+  steps:
+  - user: |
+      How was the  [arch]{"entity":"topic", "value":"arch"} characterized in ancient times?
+    intent: ancient_appearance  
+  - slot_was_set:
+    - topic: arch
+  - action: utter_ancient_appearance
+  - action: send_Topic 
+
+
+
+- story: dimension_arch
+  steps:
+  - user: |
+      How long and how high is the [arch]{"entity":"topic", "value":"arch"}?
+    intent: dimension  
+  - slot_was_set:
+    - topic: arch
+  - action: utter_dimension
+  - action: send_Topic 
+
+- story: dimension_cryptoporticus
+  steps:
+  - user: |
+      How much is high and wide the [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"} ?
+    intent: dimension    
+  - slot_was_set:
+    - topic: cryptoporticus
+  - action: utter_dimension
+  - action: send_Topic 
+
+- story: dimension_conocchia
+  steps:
+  - user: |
+      How high is [Conocchia]{"entity":"topic", "value":"conocchia"}?
+    intent: dimension   
+  - slot_was_set:
+    - topic: conocchia
+  - action: utter_dimension
+  - action: send_Topic 
+
+- story: dimension_domus_confuleuis
+  steps:
+  - user: |
+      What are the measures of the domus [confuleius]{"entity":"topic", "value":"domus_confuleius"}?
+    intent: dimension    
+  - slot_was_set:
+    - topic: domus_confuleuis
+  - action: utter_dimension
+  - action: send_Topic 
+
+- story: dimension_domus_orti
+  steps:
+  - user: |
+      What are the measures of the domus [orti]{"entity":"topic", "value":"domus_orti"}?
+    intent: dimension   
+  - slot_was_set:
+    - topic: domus_orti
+  - action: utter_dimension
+  - action: send_Topic 
+
+- story: dimension_theater
+  steps:
+  - user: |
+      What are the measures of the [theater]{"entity":"topic", "value":"theater"}?
+    intent: dimension    
+  - slot_was_set:
+    - topic: theater
+  - action: utter_dimension
+  - action: send_Topic 
+
+
+
+
+- story: monument_date_arch
+  steps:
+  - user: |
+      when you date the [bow]{"entity":"topic", "value":"arch"}
+    intent: monument_date  
+  - slot_was_set:
+    - topic: arch
+  - action: utter_monument_date
+  - action: send_Topic 
+
+- story: monument_date_conocchia
+  steps:
+  - user: |
+      When you date [Conocchia]{"entity":"topic", "value":"conocchia"} ?
+    intent: monument_date  
+  - slot_was_set:
+    - topic: conocchia
+  - action: utter_monument_date
+  - action: send_Topic 
+
+- story: monument_date_cryptoporticus
+  steps:
+  - user: |
+      what epoch the [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"} of Capua dates back to
+    intent: monument_date   
+  - slot_was_set:
+    - topic: cryptoporticus
+  - action: utter_monument_date
+  - action: send_Topic 
+
+- story: monument_date_domus_confuleius
+  steps:
+  - user: |
+      could you tell me the dating of the domus of [Confuleius]{"entity":"topic", "value":"domus_confuleius"}
+    intent: monument_date   
+  - slot_was_set:
+    - topic: domus_confuleius
+  - action: utter_monument_date
+  - action: send_Topic 
+
+- story: monument_date_domus_orti
+  steps:
+  - user: |
+      In which epoch the domus of [Orti]{"entity":"topic", "value":"domus_orti"} is placed?
+    intent: monument_date  
+  - slot_was_set:
+    - topic: domus_orti
+  - action: utter_monument_date
+  - action: send_Topic 
+
+- story: monument_date_theater
+  steps:
+  - user: |
+      In which epoch the [theater]{"entity":"topic", "value":"theater"} is placed?
+    intent: monument_date   
+  - slot_was_set:
+    - topic: theater
+  - action: utter_monument_date
+  - action: send_Topic 
+
+
+
+
+
+
+- story: monument_discovered_theater
+  steps:
+  - user: |
+      When was the [theater]{"entity":"topic", "value":"theater"}  found?
+    intent: monument_discovered  
+  - slot_was_set:
+    - topic: theater
+  - action: utter_monument_discovered
+  - action: send_Topic
+
+- story: monument_discovered_domus_confuleius
+  steps:
+  - user: |
+      When was the domus [confuleius]{"entity":"topic", "value":"domus_confuleius"} discovered?
+    intent: monument_discovered   
+  - slot_was_set:
+    - topic: domus_confuleius
+  - action: utter_monument_discovered
+  - action: send_Topic
+
+- story: monument_discovered_domus_orti
+  steps:
+  - user: |
+      When was the domus [orti]{"entity":"topic", "value":"domus_orti"} found?
+    intent: monument_discovered   
+  - slot_was_set:
+    - topic: domus_orti
+  - action: utter_monument_discovered
+  - action: send_Topic
+ 
+
+
+
+
+
+- story: monument_restoration_arch
+  steps:
+  - user: |
+      Any actions of restoration on the [arch]{"entity":"topic", "value":"arch"}?
+    intent: monument_restoration   
+  - slot_was_set:
+    - topic: arch
+  - action: utter_monument_restoration
+  - action: send_Topic
+
+- story: monument_restoration_conocchia
+  steps:
+  - user: |
+      Tell me something about [Conocchia]{"entity":"topic", "value":"conocchia"} restorations.
+    intent: monument_restoration  
+  - slot_was_set:
+    - topic: conocchia
+  - action: utter_monument_restoration
+  - action: send_Topic
+
+- story: monument_restoration_domus_orti
+  steps:
+  - user: |
+      Has the domus [orti]{"entity":"topic", "value":"domus_orti"} already undergone restorations in ancient times?
+    intent: monument_restoration  
+  - slot_was_set:
+    - topic: domus_orti
+  - action: utter_monument_restoration
+  - action: send_Topic
+
+
+
+
+
+
+- story: monuement_material_arch
+  steps:
+  - user: |
+      How this [arch]{"entity":"topic", "value":"arch"} made
+    intent: monument_material   
+  - slot_was_set:
+    - topic: arch
+  - action: utter_monument_material
+  - action: send_Topic
+
+- story: monuement_material_conocchia
+  steps:
+  - user: |
+      How was the [Conocchia]{"entity":"topic", "value":"conocchia"} built?
+    intent: monument_material   
+  - slot_was_set:
+    - topic: conocchia
+  - action: utter_monument_material
+  - action: send_Topic
+
+- story: monuement_material_cryptoporticus
+  steps:
+  - user: |
+      Which techniques were used to build the  [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"}?
+    intent: monument_material    
+  - slot_was_set:
+    - topic: cryptoporticus
+  - action: utter_monument_material
+  - action: send_Topic
+
+
+
+
+
+
+- story: architecture_info_arch
+  steps:
+  - user: |
+      How the [arch]{"entity":"topic", "value":"arch"}  is built?
+    intent: architecture_info  
+  - slot_was_set:
+    - topic: arch
+  - action: utter_architecture_info
+  - action: send_Topic
+
+- story: architecture_info_conocchia
+  steps:
+  - user: |
+      How [Conocchia]{"entity":"topic", "value":"conocchia"} is made?
+    intent: architecture_info    
+  - slot_was_set:
+    - topic: conocchia
+  - action: utter_architecture_info
+  - action: send_Topic
+
+- story: architecture_info_domus_confuleius
+  steps:
+  - user: |
+      How domus [confuleius]{"entity":"topic", "value":"domus_confuleius"} is built?
+    intent: architecture_info    
+  - slot_was_set:
+    - topic: domus_confuleius
+  - action: utter_architecture_info
+  - action: send_Topic
+
+- story: architecture_info_domus_orti
+  steps:
+  - user: |
+      How domus in via degli [Orti]{"entity":"topic", "value":"domus_orti"} is made?
+    intent: architecture_info  
+  - slot_was_set:
+    - topic: domus_orti
+  - action: utter_architecture_info
+  - action: send_Topic
+
+- story: architecture_info_theater #errore, va scritto theater nel valore dell'entity
+  steps:
+  - user: |
+      What are the architectural features about [thater]{"entity":"topic", "value":"theater"}?
+    intent: architecture_info    
+  - slot_was_set:
+    - topic: theater
+  - action: utter_architecture_info
+  - action: send_Topic
+
+
+
+
+
+
+- story: monument_function_arch
+  steps:
+  - user: |
+      How did the [arch]{"entity":"topic", "value":"arch"} fit into the ancient landscape?
+    intent: monument_function  
+  - slot_was_set:
+    - topic: arch
+  - action: utter_monument_function
+  - action: send_Topic 
+
+- story: monument_function_cryptoporticus
+  steps:
+  - user: |
+      How was used the [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"}  in the past?
+    intent: monument_function  
+  - slot_was_set:
+    - topic: cryptoporticus
+  - action: utter_monument_function
+  - action: send_Topic 
+
+
+
+
+
+- story: monument_depictions_cryptoporticus # l'entity è solo criptoportico e non labruzzi_criptoportico, errore
+  steps:
+  - user: |
+      How was the [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"} of Carlo Labruzzi?
+    intent: monument_depictions   
+  - slot_was_set:
+    - topic: labruzzi_cryptoporticus
+  - action: utter_monument_depictions
+  - action: send_Topic 
+
+- story: monument_depictions_conocchia
+  steps:
+  - user: |
+      Do you know about ancient images of the [Conocchia]{"entity":"topic", "value":"conocchia"}?
+    intent: monument_depictions   
+  - slot_was_set:
+    - topic: conocchia
+  - action: utter_monument_depictions
+  - action: send_Topic 
+
+- story: monument_depictions_arch
+  steps:
+  - user: |
+      Do you know about ancient images of the [arch]{"entity":"topic", "value":"arch"}?
+    intent: monument_depictions    
+  - slot_was_set:
+    - topic: arch
+  - action: utter_monument_depictions
+  - action: send_Topic 
+
+- story: monument_depictions_theater
+  steps:
+  - user: |
+      What emerges from Carlo Labruzzi's drawing in the [theater]{"entity":"topic", "value":"theater"}?
+    intent: monument_depictions   
+  - slot_was_set:
+    - topic: theater
+  - action: utter_monument_depictions
+  - action: send_Topic 
+
+- story: monument_depictions_fattori #errore, fattori è  in minuscolo come slot  was set mentre è acquisito maiuscolo
+  steps:
+  - user: |
+      Where is Giovanni [Fattori]{"entity":"topic", "value":"Fattori"}'s painting kept?
+    intent: monument_depictions  
+  - slot_was_set:
+    - topic: fattori
+  - action: utter_monument_depictions
+  - action: send_Topic 
+
+- story: monument_depictions_pecurialis 
+  steps:
+  - user: |
+      What is represented on the Lucceius [Peculiaris]{"entity":"topic", "value":"peculiaris"} relief?
+    intent: monument_depictions  
+  - slot_was_set:
+    - topic: pecurialis
+  - action: utter_monument_depictions
+  - action: send_Topic 
+
+
+
+
+
+
+
+
+- story: monument_epigraph_arch
+  steps:
+  - user: |
+      Is there a dedicatory epigraph of the [arch]{"entity":"topic", "value":"arch"} ?
+    intent: monument_epigraph   
+  - slot_was_set:
+    - topic: arch
+  - action: utter_monument_epigraph
+  - action: send_Topic           
+
+- story: monument_epigraph_conocchia
+  steps:
+  - user: |
+      What is about the epigraph on the facade of [Conocchia]{"entity":"topic", "value":"conocchia"}?
+    intent: monument_epigraph    
+  - slot_was_set:
+    - topic: conocchia
+  - action: utter_monument_epigraph
+  - action: send_Topic           
+
+
+
+
+
+
+- story: name_meaning_tomb
+  steps:
+  - user: |
+      Why is this [tomb called conocchia]{"entity":"word", "value":"tomb"}?
+    intent: name_meaning    
+  - slot_was_set:
+    - word: tomb
+  - action: utter_name_meaning
+
+- story: name_meaning_triclinium
+  steps:
+  - user: |
+      What's about the [triclinium]{"entity":"word", "value":"triclinium"} ?
+    intent: name_meaning   
+  - slot_was_set:
+    - word: triclinium
+  - action: utter_name_meaning
+
+- story: name_meaning_cubiculum
+  steps:
+  - user: |
+      What is the [cubiculum]{"entity":"word", "value":"cubiculum"}?
+    intent: name_meaning   
+  - slot_was_set:
+    - word: cubiculum
+  - action: utter_name_meaning
+
+- story: name_meaning_opus_sectile
+  steps:
+  - user: |
+      What is opus [sectile]{"entity":"word", "value":"opus_sectile"}?
+    intent: name_meaning   
+  - slot_was_set:
+    - word: opus_sectile
+  - action: utter_name_meaning
+
+- story: name_meaning_sagum
+  steps:
+  - user: |
+      What is [sagum]{"entity":"word", "value":"sagum"}?
+    intent: name_meaning    
+  - slot_was_set:
+    - word: sagum
+  - action: utter_name_meaning
+
+- story: name_meaning_pompeian_style
+  steps:
+  - user: |
+      What is meant by "first [Pompeian]{"entity":"word", "value":"pompeian_style"} style"?
+    intent: name_meaning    
+  - slot_was_set:
+    - word: pompeian_style
+  - action: utter_name_meaning
+
+- story: name_meaning_brick_work
+  steps:
+  - user: |
+      What is the [brick]{"entity":"word", "value":"brick_work"} work?
+    intent: name_meaning  
+  - slot_was_set:
+    - word: brick_work
+  - action: utter_name_meaning
+
+
+
+
+
+
+
+- story: who_is_labruzzi # problema, il valore è criptoportico ma dovrebbe essere labruzzi
+  steps:
+  - user: |
+      Who was [labruzzi] {"entity":"topic", "value":"cryptoporticus"}?
+    intent: who_is    
+  - slot_was_set:
+    - topic: labruzzi
+  - action: utter_who_is
+  - action: send_Topic 
+
+- story: who_is_peculiaris
+  steps:
+  - user: |
+      Who was [peculiaris] {"entity":"topic", "value":"peculiaris"}?
+    intent: who_is   
+  - slot_was_set:
+    - topic: peculiaris
+  - action: utter_who_is
+  - action: send_Topic 
+
+- story: who_is_domus_confuleius
+  steps:
+  - user: |
+      Tell me about [confuleius]{"entity":"topic", "value":"domus_confuleius"}?
+    intent: who_is   
+  - slot_was_set:
+    - topic: domus_confuleius
+  - action: utter_who_is
+  - action: send_Topic 
+
+- story: who_is_fattori
+  steps:
+  - user: |
+      Who was [fattori] {"entity":"topic", "value":"fattori"}?
+    intent: who_is    
+  - slot_was_set:
+    - topic: fattori
+  - action: utter_who_is
+  - action: send_Topic 
+
+
+
+
+
+
+
+- story: domus_rooms_domus_confuleius
+  steps:
+  - user: |
+      How many rooms belong to the domus [confuleius]{"entity":"topic", "value":"domus_confuleius"}
+    intent: domus_rooms  
+  - slot_was_set:
+    - topic: domus_confuleius
+  - action: utter_domus_rooms
+  - action: send_Topic 
+
+- story: domus_rooms_domus_orti
+  steps:
+  - user: |
+      How many rooms belong to the domus [orti]{"entity":"topic", "value":"domus_orti"}?
+    intent: domus_rooms   
+  - slot_was_set:
+    - topic: domus_orti
+  - action: utter_domus_rooms
+  - action: send_Topic 
+
+
+
+
+
+
+- story: conocchia_enclosure
+  steps:
+  - user: |
+      What was [Conocchia]{"entity":"topic", "value":"conocchia"}  used for?
+    intent: conocchia_enclosure
+  - action: utter_conocchia_enclosure
+
+
+
+
+
+- story: current_state_arch
+  steps:
+  - user: |
+      How much [arch]{"entity":"topic", "value":"arch"} is preserved?
+    intent: current_state    
+  - slot_was_set:
+    - topic: arch
+  - action: utter_current_state
+  - action: send_Topic     
+
+- story: current_state_conocchia
+  steps:
+  - user: |
+      How it is possible to enter the [burial]{"entity":"topic", "value":"conocchia"} chamber?
+    intent: current_state    
+  - slot_was_set:
+    - topic: conocchia
+  - action: utter_current_state
+  - action: send_Topic     
+
+- story: current_state_cryptoporticus
+  steps:
+  - user: |
+      Is the [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"}  different from the ancient time?
+    intent: current_state  
+  - slot_was_set:
+    - topic: cryptoporticus
+  - action: utter_current_state
+  - action: send_Topic     
+
+- story: current_state_domus_confuleius
+  steps:
+  - user: |
+      May I visit the domus [confuleius]{"entity":"topic", "value":"domus_confuleius"}?
+    intent: current_state    
+  - slot_was_set:
+    - topic: domus_confuleius
+  - action: utter_current_state
+  - action: send_Topic     
+
+- story: current_state_domus_orti
+  steps:
+  - user: |
+      How much of the domus [orti]{"entity":"topic", "value":"domus_orti"} can be seen and visited?
+    intent: current_state   
+  - slot_was_set:
+    - topic: domus_orti
+  - action: utter_current_state
+  - action: send_Topic     
+
+- story: current_state_theater
+  steps:
+  - user: |
+      Why part of the [theater]{"entity":"topic", "value":"theater"} was not preserved?
+    intent: current_state   
+  - slot_was_set:
+    - topic: theater
+  - action: utter_current_state
+  - action: send_Topic     
+
+ 
+
+
+
+
+- story: domus_confuleius_rooms_first_confuleius
+  steps:
+  - user: |
+      What is in the [first]{"entity":"topic", "value":"first_confuleius"} room of the confuleius domus?
+    intent: domus_confuleius_rooms    
+  - slot_was_set:
+    - topic: first_confuleius
+  - action: utter_domus_confuleius_rooms
+  - action: send_Topic     
+
+- story: domus_confuleius_rooms_second_confuleius
+  steps:
+  - user: |
+      What is in the [second]{"entity":"topic", "value":"second_confuleius"} room of the confuleius domus?
+    intent: domus_confuleius_rooms    
+  - slot_was_set:
+    - topic: second_confuleius
+  - action: utter_domus_confuleius_rooms
+  - action: send_Topic 
+
+
+
+
+
+- story: current_state domus_confuleius_floors_first_confuleius
+  steps:
+  - user: |
+      Describe me floor of the [first]{"entity":"topic", "value":"first_confuleius"} room.
+    intent: domus_confuleius_floors   
+  - slot_was_set:
+    - topic: first_confuleius
+  - action: utter_domus_confuleius_floors
+  - action: send_Topic 
+  
+- story: current_state domus_confuleius_floors_second_confuleius
+  steps:
+  - user: |
+      Describe me floor of the [second]{"entity":"topic", "value":"second_confuleius"} room.
+    intent: domus_confuleius_floors   
+  - slot_was_set:
+    - topic: second_confuleius
+  - action: utter_domus_confuleius_floors
+  - action: send_Topic 
+
+
+
+
+
+
+- story: domus_confuleius_inscriptions
+  steps:
+  - user: |
+      How many [inscriptions]{"entity":"topic", "value":"second_confuleius"} are there in the domus confuleius?
+    intent: domus_confuleius_inscriptions 
+  - slot_was_set:
+    - topic: second_confuleius
+  - action: utter_domus_confuleius_inscriptions   
+  - action: send_Topic
+
+
+
+
+
+- story: domus_confuleius_inscriptions_location
+  steps:
+  - user: |
+      Where are the domus confuleius [inscriptions]{"entity":"topic", "value":"second_confuleius"} saved?
+    intent: domus_confuleius_inscriptions_location
+  - slot_was_set:
+    - topic: second_confuleius
+  - action: utter_domus_confuleius_inscriptions_location   
+  - action: send_Topic
+ 
+
+
+
+
+
+- story: domus_confuleius_owner
+  steps:
+  - user: |
+      How do we know that the domus was owned by the Publio Confuleio?
+    intent: domus_confuleius_owner
+  - action: utter_domus_confuleius_owner  
+
+
+
+
+
+- story: domus_via_orti_spa
+  steps:
+  - user: |
+      How was the thermal sector structured?
+    intent: domus_via_orti_spa
+  - action: utter_domus_via_orti_spa  
+
+
+
+
+- story: domus_via_orti_thermal_rooms
+  steps:
+  - user: |
+      Which decoration are used into the thermal rooms?
+    intent: domus_via_orti_thermal_rooms
+  - action: utter_domus_via_orti_thermal_rooms
+  - action: send_Topic 
+
+
+
+
+
+- story: domus_via_orti_cubiculum_floor
+  steps:
+  - user: |
+      Tell me about cubiculum floor of the domus orti.
+    intent: domus_via_orti_cubiculum_floor
+  - action: utter_domus_via_orti_cubiculum_floor
+
+
+
+
+
+- story: domus_via_orti_triclinium_floor
+  steps:
+  - user: |
+      How is the floor of the triclinium floor?
+    intent: domus_via_orti_triclinium_floor
+  - action: utter_domus_via_orti_triclinium_floor
+
+
+
+
+- story: domus_via_orti_entrance
+  steps:
+  - user: |
+      Where it was  the original entrance to the domus?
+    intent: domus_via_orti_entrance
+  - action: utter_domus_via_orti_entrance

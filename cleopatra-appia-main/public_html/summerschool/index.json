@@ -1,0 +1,832 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json",
+  "type": "Manifest",
+  "items": [
+    {
+      "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/0",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/0/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/0/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_ARCO_DI_CAPUA_1/Arco di Capua_1.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "﻿Arco di Capua"
+                  ]
+                },
+                "width": 802,
+                "height": 602
+              },
+              "target": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/0"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "﻿Arco di Capua"
+        ]
+      },
+      "width": 802,
+      "height": 602,
+      "thumbnail": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_ARCO_DI_CAPUA_1/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/1",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/1/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/1/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_ARCO_DI_CAPUA_2/Arco di Capua_2.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "﻿L’arco di Capua e i suoi restauri"
+                  ]
+                },
+                "width": 1133,
+                "height": 697
+              },
+              "target": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/1"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "﻿L’arco di Capua e i suoi restauri"
+        ]
+      },
+      "width": 1133,
+      "height": 697,
+      "thumbnail": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_ARCO_DI_CAPUA_2/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/2",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/2/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/2/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_ARCO_DI_CAPUA_3/Arco di Capua_3.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "﻿Un’ipotesi ricostruttiva dell’arco"
+                  ]
+                },
+                "width": 1408,
+                "height": 1447
+              },
+              "target": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/2"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "﻿Un’ipotesi ricostruttiva dell’arco"
+        ]
+      },
+      "width": 1408,
+      "height": 1447,
+      "thumbnail": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_ARCO_DI_CAPUA_3/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/3",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/3/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/3/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_ARCO_DI_CAPUA_4/Arco di Capua_4.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "La veduta dell’arco di Carlo Labruzzi"
+                  ]
+                },
+                "width": 1154,
+                "height": 817
+              },
+              "target": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/3"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "La veduta dell’arco di Carlo Labruzzi"
+        ]
+      },
+      "width": 1154,
+      "height": 817,
+      "thumbnail": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_ARCO_DI_CAPUA_4/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/4",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/4/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/4/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_ARCO_DI_CAPUA_5/Arco di Capua_5.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "Dipinto del pittore Giovanni Fattori, Difesa di Porta Capuana o Battaglia del Volturno"
+                  ]
+                },
+                "width": 480,
+                "height": 270
+              },
+              "target": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/4"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "Dipinto del pittore Giovanni Fattori, Difesa di Porta Capuana o Battaglia del Volturno"
+        ]
+      },
+      "width": 480,
+      "height": 270,
+      "thumbnail": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_ARCO_DI_CAPUA_5/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/5",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/5/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/5/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_CONOCCHIA_1/conocchia_1.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "La Conocchia"
+                  ]
+                },
+                "width": 1201,
+                "height": 735
+              },
+              "target": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/5"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "La Conocchia"
+        ]
+      },
+      "width": 1201,
+      "height": 735,
+      "thumbnail": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_CONOCCHIA_1/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/6",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/6/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/6/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_CONOCCHIA_2/conocchia_2.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "Il restauro della Conocchia"
+                  ]
+                },
+                "width": 550,
+                "height": 412
+              },
+              "target": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/6"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "Il restauro della Conocchia"
+        ]
+      },
+      "width": 550,
+      "height": 412,
+      "thumbnail": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_CONOCCHIA_2/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/7",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/7/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/7/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_CONOCCHIA_3/conocchia_3.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "La Conocchia nel disegno di Labruzzi"
+                  ]
+                },
+                "width": 1169,
+                "height": 856
+              },
+              "target": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/7"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "La Conocchia nel disegno di Labruzzi"
+        ]
+      },
+      "width": 1169,
+      "height": 856,
+      "thumbnail": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_CONOCCHIA_3/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/9",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/9/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/9/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_CRIPTOPORTICO_1/criptoportico_1.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "﻿Il criptoportico"
+                  ]
+                },
+                "width": 275,
+                "height": 183
+              },
+              "target": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/9"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "﻿Il criptoportico"
+        ]
+      },
+      "width": 275,
+      "height": 183,
+      "thumbnail": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_CRIPTOPORTICO_1/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/10",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/10/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/10/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_CRIPTOPORTICO_2/criptoportico_2.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "﻿Il criptoportico e le sue destinazioni d’uso"
+                  ]
+                },
+                "width": 985,
+                "height": 1020
+              },
+              "target": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/10"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "﻿Il criptoportico e le sue destinazioni d’uso"
+        ]
+      },
+      "width": 985,
+      "height": 1020,
+      "thumbnail": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_CRIPTOPORTICO_2/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/11",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/11/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/11/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_CRIPTOPORTICO_3/criptoportico_3.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "﻿Il criptoportico in un disegno di Labruzzi"
+                  ]
+                },
+                "width": 1181,
+                "height": 871
+              },
+              "target": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/11"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "﻿Il criptoportico in un disegno di Labruzzi"
+        ]
+      },
+      "width": 1181,
+      "height": 871,
+      "thumbnail": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_CRIPTOPORTICO_3/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/12",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/12/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/12/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_DOMUS_CONFULEIUS_1/domus confuleius_1.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "﻿La domus di Confuleius"
+                  ]
+                },
+                "width": 1197,
+                "height": 1324
+              },
+              "target": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/12"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "﻿La domus di Confuleius"
+        ]
+      },
+      "width": 1197,
+      "height": 1324,
+      "thumbnail": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_DOMUS_CONFULEIUS_1/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/13",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/13/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/13/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_DOMUS_CONFULEIUS_2/domus confuleius_2.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "﻿L’iscrizione pavimentale del secondo ambiente"
+                  ]
+                },
+                "width": 1308,
+                "height": 491
+              },
+              "target": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/13"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "﻿L’iscrizione pavimentale del secondo ambiente"
+        ]
+      },
+      "width": 1308,
+      "height": 491,
+      "thumbnail": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_DOMUS_CONFULEIUS_2/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/14",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/14/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/14/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_DOMUS_CONFULEIUS_3/domus confuleius_3.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "﻿I pavimenti degli ambienti"
+                  ]
+                },
+                "width": 890,
+                "height": 710
+              },
+              "target": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/14"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "﻿I pavimenti degli ambienti"
+        ]
+      },
+      "width": 890,
+      "height": 710,
+      "thumbnail": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_DOMUS_CONFULEIUS_3/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/15",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/15/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/15/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_DOMUS_VIA_DEGLI_ORTI_1/domus via degli orti_1.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "﻿La domus in via degli Orti"
+                  ]
+                },
+                "width": 550,
+                "height": 412
+              },
+              "target": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/15"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "﻿La domus in via degli Orti"
+        ]
+      },
+      "width": 550,
+      "height": 412,
+      "thumbnail": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_DOMUS_VIA_DEGLI_ORTI_1/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/16",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/16/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/16/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_DOMUS_VIA_DEGLI_ORTI_2/domus via degli orti_2.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "﻿I pavimenti della domus di via degli Orti"
+                  ]
+                },
+                "width": 785,
+                "height": 486
+              },
+              "target": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/16"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "﻿I pavimenti della domus di via degli Orti"
+        ]
+      },
+      "width": 785,
+      "height": 486,
+      "thumbnail": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_DOMUS_VIA_DEGLI_ORTI_2/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/17",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/17/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/17/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_TEATRO_1/teatro_1.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "﻿Il teatro"
+                  ]
+                },
+                "width": 544,
+                "height": 286
+              },
+              "target": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/17"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "﻿Il teatro"
+        ]
+      },
+      "width": 544,
+      "height": 286,
+      "thumbnail": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_TEATRO_1/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/18",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/18/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/18/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_TEATRO_2/teatro_2.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "﻿Il teatro nel disegno di Labruzzi"
+                  ]
+                },
+                "width": 1181,
+                "height": 866
+              },
+              "target": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/18"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "﻿Il teatro nel disegno di Labruzzi"
+        ]
+      },
+      "width": 1181,
+      "height": 866,
+      "thumbnail": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_TEATRO_2/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/19",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/19/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/19/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_TEATRO_3/teatro_3.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "﻿Il rilievo di Lucceius Peculiaris"
+                  ]
+                },
+                "width": 512,
+                "height": 176
+              },
+              "target": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/19"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "﻿Il rilievo di Lucceius Peculiaris"
+        ]
+      },
+      "width": 512,
+      "height": 176,
+      "thumbnail": [
+        {
+          "id": "https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/_TEATRO_3/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "label": {
+    "@none": [
+      "summerschool"
+    ]
+  }
+}

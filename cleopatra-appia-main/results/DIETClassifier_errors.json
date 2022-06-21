@@ -1,0 +1,72 @@
+[
+  {
+    "text": "panning x 31 y 56",
+    "entities": [
+      {
+        "start": 10,
+        "end": 12,
+        "value": "31",
+        "entity": "pan_x"
+      },
+      {
+        "start": 15,
+        "end": 17,
+        "value": "56",
+        "entity": "pan_y"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pan_y",
+        "start": 10,
+        "end": 12,
+        "confidence_entity": 0.4761791527271271,
+        "value": "31",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pan_y",
+        "start": 15,
+        "end": 17,
+        "confidence_entity": 0.8627818822860718,
+        "value": "56",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "panning x 201 y 428",
+    "entities": [
+      {
+        "start": 10,
+        "end": 13,
+        "value": "201",
+        "entity": "pan_x"
+      },
+      {
+        "start": 16,
+        "end": 19,
+        "value": "428",
+        "entity": "pan_y"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pan_y",
+        "start": 10,
+        "end": 13,
+        "confidence_entity": 0.4761791527271271,
+        "value": "201",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pan_y",
+        "start": 16,
+        "end": 19,
+        "confidence_entity": 0.8627818822860718,
+        "value": "428",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

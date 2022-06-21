@@ -1,0 +1,86 @@
+{
+  "pan_y": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {}
+  },
+  "zoom_x": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "topic": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 219,
+    "confused_with": {}
+  },
+  "page_url": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1,
+    "confused_with": {}
+  },
+  "word": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 24,
+    "confused_with": {}
+  },
+  "annotation_url": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1,
+    "confused_with": {}
+  },
+  "zoom_y": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "zoom_factor": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "pan_x": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "pan_y": 2
+    }
+  },
+  "micro avg": {
+    "precision": 0.9921568627450981,
+    "recall": 0.9921568627450981,
+    "f1-score": 0.9921568627450981,
+    "support": 255
+  },
+  "macro avg": {
+    "precision": 0.8333333333333334,
+    "recall": 0.8888888888888888,
+    "f1-score": 0.8518518518518517,
+    "support": 255
+  },
+  "weighted avg": {
+    "precision": 0.9882352941176471,
+    "recall": 0.9921568627450981,
+    "f1-score": 0.9895424836601308,
+    "support": 255
+  },
+  "accuracy": 0.998997995991984
+}
